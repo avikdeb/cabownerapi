@@ -16,6 +16,11 @@ class SignUpView(CreateView):
     form_class = UserCreationForm
 
 
+class RegisterView(TemplateView):
+    template_name = "register.html"
+    success_url = "/logout/"
+
+
 class HomeView(TemplateView):
     template_name = "home.html"
 

@@ -1,0 +1,365 @@
+{% extends 'base.html' %}
+{% load static from staticfiles %}
+{% block content %}
+<body class="body-class bc blog">
+	<!--Start Preloader-->
+    <div class="site-preloader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+	<!--End Preloader-->
+
+	<!--Start Body Wrap-->
+	<div id="body-wrap">
+		<div id="main-menu">
+			<nav class="navbar navbar-expand-lg">
+				<div class="container">
+					<a class="navbar-brand" href="#">
+						<img src="img/logo.png" alt="">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-auto">
+								<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true"
+									aria-expanded="false">
+									Home
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+										<a class="dropdown-item" href="index.html">Home1</a>
+										<a class="dropdown-item" href="index-2.html">Home2</a>
+								</div>
+							</li>
+								<li class="nav-item">
+									<a class="nav-link" href="packges.html">Package</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="hotels.html">Hotel</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="ourvahicles.html">Vehicles</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="blog.html">Blog</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										Pages
+									</a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+										<a class="dropdown-item" href="AboutUs.html">About Us</a>
+										<a class="dropdown-item" href="gallery.html">Gallery Grid</a>
+										<a class="dropdown-item" href="ticket-booking.html">Ticket Booking</a>
+										<a class="dropdown-item" href="ourdestination.html">Our Destination</a>
+										<a class="dropdown-item" href="blog-sidebar-left.html">Blog Sidebar left</a>
+										<a class="dropdown-item" href="blog-sidebar-right.html">Blog Sidebar Right</a>
+										<a class="dropdown-item" href="faq.html">FAQ</a>
+										<a class="dropdown-item" href="404.html">404</a>
+									</div>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link active" href="contactUs.html">Contact Us</a>
+								</li>
+							</ul>
+						<a class="mamunur_rashid_top_book_btn" href="ticket-booking.html">Book Online</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+		<!-- =========== nav end =========== -->
+
+		<section id="breadcrumb">
+			<div class="overly"></div>
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-8 col-md-10 text-center">
+						<div class="breadcrumbinfo">
+							<article>
+								<h2>Contacts Us</h2>
+								<a href="#">Home</a> <span>/</span>
+								<a class="active" href="#">Contacts Us</a>
+							</article>
+						</div>
+					</div>
+				</div>
+		</div>
+	</section>
+	<!-- =========== banner end =========== -->
+
+
+<!--================================
+        contact us  part start
+    =====================================-->
+		<section id="contact-main">
+			 <div class="container">
+					<div class="row">
+						 <div class="col-12">
+								<div class="google_map_wrapper">
+										<div id="map"></div>
+									</div>
+							 <div class="contact-address">
+								 <div class="con-num">
+									 <div>
+											<div class="media">
+													<i class="fa fa-map-marker mr-3"></i>
+													<div class="media-body">
+														<h5>Address</h5>
+														<p>05, Martin Street A598, Polo Alto,<br>
+															 San Francisco</p>
+													</div>
+												</div>
+									 </div>
+									 <div>
+											<div class="media">
+													<i class="fa fa-mobile mr-3"></i>
+													<div class="media-body">
+														<h5>Phone</h5>
+															<a class="d-block" href="tel:+333123456789">
+																	Mobile: (+33) 123-456-789
+															</a>
+															<a class="d-block" href="tel:18006886">
+																	Hotline: 1800 6886
+															</a>
+													</div>
+												</div>
+									 </div>
+									 <div>
+											<div class="media mlc">
+													<i class="fa fa-envelope mr-3"></i>
+													<div class="media-body">
+														<h5>Email</h5>
+															<a class="d-block" href="mailto:example@gmail.com">
+																	example@gmail.com
+																</a>
+															<a class="d-block" href="mailto:example2@gmail.com">
+																	example@gmail2.com
+																</a>
+													</div>
+												</div>
+									 </div>
+
+								 </div>
+								 <div class="f-social-links">
+									 <a href="#" target="_blank">
+										 <span class="fa fa-facebook fb"></span>
+									 </a>
+									 <a href="#" target="_blank">
+										 <span class="fa fa-twitter tw"></span>
+									 </a>
+									 <a href="#" target="_blank">
+										 <span class="fa fa-google-plus goo"></span>
+									 </a>
+									 <a href="#" target="_blank">
+										 <span class="fa fa-linkedin in"></span>
+									 </a>
+									 <a href="#" target="_blank">
+										 <span class="fa fa-instagram ins"></span>
+									 </a>
+								 </div>
+							 </div>
+							 </div>
+					</div>
+				</div>
+			 <div class="contact-form-area-padding">
+				 <div class="container">
+					 <div class="row contact-form-area">
+						 <div class="col-lg-6">
+							 <div class="img">
+
+							 </div>
+						 </div>
+						 <div class="col-lg-6 contact-form">
+							 <div class="row">
+								 <div class="col-12">
+									 <div class="contact-block-form">
+										 <h4>Keep in touch</h4>
+										 <p>There are many variations of passages of Lorem Ipsum available but the majority a have suffered alteration in some form by injected humour or randomised look even slightly believable. </p>
+									 </div>
+								 </div>
+							 </div>
+							 <form id="c-form" action="contact.php" method="post">
+								 <div class="row">
+									 <div class="col-md-12">
+										 <input type="text" class="form-control" placeholder="Enter Name" name="name" required>
+									 </div>
+									 <div class="col-md-12">
+										 <input type="email" class="form-control" placeholder="Eenter Mail" name="email" required>
+									 </div>
+									 <div class="col-md-12">
+										 <input type="text" class="form-control" placeholder="Subject" name="subject" required>
+									 </div>
+									 <div class="col-12">
+										 <textarea class="form-control" rows="3" id="comment" placeholder="Comment" name="message" required></textarea>
+									 </div>
+									 <div class="col-12">
+										 <button type="submit" class="btn btn-contact">Submit
+										 </button>
+									 </div>
+								 </div>
+							 </form>
+						 </div>
+					 </div>
+				 </div>
+			 </div>
+
+		 </section>
+		 <!--================================
+				 contact us part end
+				 =====================================-->
+
+
+
+
+	<!-- footer part start -->
+	<footer id="contact" class="theme-footer-one">
+			<div class="top-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-sm-6 about-widget">
+							<div class="f-logo">
+								<img src="img/logo.png" alt="">
+							</div>
+							<p>There are many variations of passages of that Lorem Ipsum available but the majority have is suffered
+								alteration.</p>
+							<div class="queries">
+								<ul>
+									<li>
+										<i class="fa fa-phone" aria-hidden="true"></i>
+										<a href="tel:+1234567900">(+1) 234 567 900</a>
+								</li>
+								<li>
+										<i class="fa fa-map-marker" aria-hidden="true"></i>
+										<a href="#">123 Usa, New Work</a>
+								</li>
+								<li>
+										<i class="fa fa-envelope" aria-hidden="true"></i>
+										<a href="mailto:demo@gmail.com">demo@gmail.com</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- /.footer-recent-post -->
+						<div class="col-lg-3 col-sm-6 footer-list">
+							<h6 class="title">Usefull Links</h6>
+							<ul>
+								<li>
+									<a href="#">Wedding Tours</a>
+								</li>
+								<li>
+									<a href="VehiclesSpecification.html">Bus Tours</a>
+								</li>
+								<li>
+									<a href="#">Food & Wine</a>
+								</li>
+								<li>
+									<a href="#">Summer Rest</a>
+								</li>
+								<li>
+									<a href="gallery.html">Tours Photo Gallery</a>
+								</li>
+							</ul>
+						</div>
+						<!-- /.about-widget -->
+						<div class="col-lg-3 col-sm-6 footer-recent-post">
+							<h6 class="title">Recent News</h6>
+							<ul>
+								<li class="d-flex">
+									<img src="img/blog/f1.png" alt="" class="float-left">
+									<div class="post float-left">
+										<a href="blog-details-right.html">Discovering
+											the Beauty of New Zealand</a>
+										<div class="date">Feb 06, 2018</div>
+									</div>
+								</li>
+								<li class="d-flex">
+									<img src="img/blog/f1.png" alt="" class="float-left">
+									<div class="post float-left">
+										<a href="blog-details-right.html">Discovering
+											the Beauty of New Zealand</a>
+										<div class="date"> Mar 20, 2018</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- /.footer-list -->
+						<div class="col-lg-3 col-sm-6 footer-newsletter">
+							<h6 class="title">Instagram</h6>
+							<div class="row">
+								<div class="col-md-4 col-4 item">
+									<img class="insta img-fluid" src="img/footer/ins-1.png" alt="">
+								</div>
+								<div class="col-md-4 col-4 item">
+									<img class="insta img-fluid" src="img/footer/ins-2.png" alt="">
+								</div>
+								<div class="col-md-4 col-4 item">
+									<img class="insta img-fluid" src="img/footer/ins-3.png" alt="">
+								</div>
+								<div class="col-md-4 col-4 item">
+									<img class="insta img-fluid" src="img/footer/ins-3.png" alt="">
+								</div>
+								<div class="col-md-4 col-4 item">
+									<img class="insta img-fluid" src="img/footer/ins-2.png" alt="">
+								</div>
+								<div class="col-md-4 col-4 item">
+									<img class="insta img-fluid" src="img/footer/ins-1.png" alt="">
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-12">
+									<div class="social-link">
+										<span>Follow Us : </span>
+										<a href="#">
+											<i class="fa fa-facebook"></i>
+										</a>
+										<a href="#">
+											<i class="fa fa-twitter"></i>
+										</a>
+										<a href="#">
+											<i class="fa fa-instagram"></i>
+										</a>
+										<a href="#">
+											<i class="fa fa-linkedin"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /.row -->
+				</div>
+				<!-- /.container -->
+			</div>
+			<!-- /.top-footer -->
+			<div class="bottom-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 text-center ">
+							<p>&copy; Copyrights 2018. All Rights Reserved.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /.bottom-footer -->
+		</footer>
+	<!-- footer part end -->
+
+
+
+	<!--Start ClickToTop-->
+	<div class="totop">
+		<a href="#top"><i class="fa fa-arrow-up"></i></a>
+	</div>
+	<!--End ClickToTop-->
+	</div>
+	<!--End Body Wrap-->
+</body>
+{% endblock %}
