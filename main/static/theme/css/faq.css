@@ -1,0 +1,144 @@
+#faq{
+	padding: 100px 0px 80px;
+}
+#faq .newsletter .n-box {
+  background: url(../img/torisumCountries/neweslatter.png) no-repeat center;
+  background-size: cover;
+  padding: 48px 20px;
+  position: relative;
+}
+.overly {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+#faq .newsletter .n-box article {
+  position: inherit;
+  z-index: 9;
+}
+
+#faq .newsletter .n-box h4,
+#faq .newsletter .n-box h3,
+#faq .newsletter .n-box p {
+  color: #fff;
+}
+
+#faq .newsletter .n-box .mamunur_rashid_form {
+  width: 100%;
+  border: 1px solid #2c3e50;
+  padding: 15px 15px;
+  background: none;
+  border-radius: .25rem;
+  margin-top: 15px;
+  color: #f2f2f2;
+}
+
+#faq .newsletter .n-box .mamunur_rashid_form:focus {
+  outline: 0px;
+}
+
+#faq .newsletter .n-box .mamunur_rashid_form.mr-btn {
+  font-weight: 600;
+  background: #356ad8;
+  border-color: #356ad8;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+#faq .newsletter .n-box .mamunur_rashid_form.mr-btn:hover {
+  background: #001e72;
+  border-color: #001e72;
+}
+
+#faq .card {
+	margin-bottom: 20px;
+	background: transparent;
+	color: white;
+}
+
+#faq .card-header {
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	padding: 0;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+
+#faq .card-body {
+	background: #f9f9f9;
+	border: none;
+	color: #242424;
+	font-size: 15px;
+}
+
+#faq .btn-link {
+  background: #f9f9f9;
+	width: 100%;
+	text-align: left;
+	font-size: 18px;
+	color: #242424;
+	border-radius: 0px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	font-weight: 600;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+#faq .btn-link:hover{
+	text-decoration: none;
+}
+
+
+#faq .btn-link i {
+	margin-right: 8px;
+	transform: rotate(-90deg);
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+#faq .btn-link[aria-expanded=true] i {
+	transform: rotate(0deg);
+}
+
+#faq-section.section_padding_100 {
+	padding-top: 90px;
+	padding-bottom: 80px;
+}
+#faq-section .section-heading {
+	margin-bottom: 77px;
+}
+#faq .card-header {
+	background: #f9f9f9;
+}
+.btn-link.focus, .btn-link:focus {
+	text-decoration: none;
+}
+#faq  .card {
+	border: 0px solid rgba(0,0,0,.125); 
+}
+#faq  .accordion2_area {
+	margin-top: 35px;
+}
+
+#faq  .accordion1_area h3{
+	margin-bottom: 20px;
+}
+#faq  .accordion2_area h3{
+	margin-bottom: 20px;
+}

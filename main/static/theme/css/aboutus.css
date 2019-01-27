@@ -1,0 +1,29 @@
+
+#aboutus{
+  padding: 100px 0px 100px;
+}
+#aboutus h3{
+  margin-bottom: 15px;
+}
+.about-btn{
+  display: inline-block;
+  background: #356ad8;
+  color: #fff;
+  padding: 12px 25px;
+  border: 2px solid #356ad8;
+  border-radius: .25rem;
+  margin-top: 25px;
+}
+.about-btn:hover{
+  color: #356ad8;
+  background: none;
+  border-color: #356ad8;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+
+

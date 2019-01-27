@@ -1,0 +1,783 @@
+@media (min-width: 1200px) and (max-width: 1400px) {
+    #banner .slick-prev {
+        left: -25%;
+    }
+    #banner .slick-next {
+        right: -25%;
+    }
+    #top_travell .slick-prev,
+    #top_travell .slick-next {
+        display: none;
+    }
+    #popular_turs .slick-prev,
+    #popular_turs .slick-prev {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .slick-prev {
+        left: -20%;
+    }
+    .slick-next {
+        right: -20%;
+    }
+    #top_travell .slick-prev,
+    #top_travell .slick-next {
+        display: none;
+    }
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #banner .slick-prev {
+        left: -10%;
+    }
+    #banner .slick-next {
+        right: -10%;
+    }
+    #main-menu .nav-link {
+        line-height: 24px;
+    }
+    #main-menu nav {
+        background: rgb(0, 0, 0);
+    }
+    #main-menu nav.navbar-fixed ul li a {
+        line-height: 24px;
+    }
+    .book-button {
+        padding: 7px 10px;
+        margin-left: 2px;
+    }
+    #popular_destinations .c-box .v-a {
+        left: 20px;
+
+    }
+    #popular_tur .newsletter .n-box {
+        margin-top: 50px;
+
+    }
+    .footer-newsletter .item {
+        padding: 5px;
+    }
+    #top_travell .slick-prev,
+    #top_travell .slick-next {
+        display: none;
+    }
+    .mamunur_rashid_top_book_btn {
+        margin-left: 0px;
+        display: inline-block;
+        margin: 15px 0px 15px;
+
+    }
+
+    #traveling_offers .section-heading.one::before {
+        top: 110px;
+    }
+    .rq-bg::before {
+        height: 134.4%;
+    }
+    .index-1 #main-menu nav .navbar-nav .nav-item .nav-link.active::before,
+    .bc #main-menu nav .navbar-nav .nav-item .nav-link.active::before {
+        bottom: -26%;
+    }
+    .index-2 #banner .banner_slider .banner_info2 {
+        top: 257px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #main-menu .nav-link {
+        line-height: 24px;
+    }
+    #main-menu .nav-link {
+        line-height: 20px;
+    }
+    #main-menu nav {
+        background: rgb(0, 0, 0);
+    }
+    #main-menu nav.navbar-fixed ul li a {
+        line-height: 24px;
+    }
+    .index-2 #banner .banner_slider .banner_info2 h2 {
+        font-size: 50px;
+    }
+    .index-2 #main-menu nav {
+        background: #242424;
+    }
+    .index-2 #main-menu .navbar ul li a {
+        color: #fff;
+    }
+    .book-button {
+        display: none;
+    }
+    #banner .banner_info h2 {
+        font-size: 60px;
+    }
+    #banner .banner_info h4 {
+        font-size: 35px;
+    }
+    .index-1 #banner .h-seaerch-area {
+        bottom: -150px;
+    }
+    .index-2 #choose-us {
+        padding: 850px 0px 100px;
+    }
+    .index-1 #choose-us {
+        padding: 242px 0px 100px;
+    }
+    .index-2 .i-s-t-content {
+        background: rgba(37, 75, 156, 1);
+    }
+    .index-2 .i-s-t-nav {
+        background: rgba(53, 106, 216, 1);
+    }
+    .mamunur_rashid_form_sm {
+        margin-top: 15px;
+    }
+    #ourServices .media {
+        display: flow-root;
+    }
+    #ourServices .media i {
+        margin-bottom: 15px;
+    }
+    .m-card-img img {
+        width: 100%;
+    }
+    #SpeacialServices .ss-box-1 {
+        margin-bottom: 30px;
+    }
+    #SpeacialServices .ss-box-2 {
+        margin-bottom: 30px;
+    }
+    .rq-bg {
+        margin-top: 130px;
+    }
+    .c-box.mr-pt-30 {
+        margin-top: 20px;
+    }
+    #popular_destinations .c-box .v-a {
+        left: 20px;
+
+    }
+    #popular_tur .media-2 {
+        margin-top: 30px;
+    }
+    .n-box {
+        margin-top: 50px;
+    }
+    #latest_news .blog-3 {
+        margin-top: 30px;
+    }
+    .footer-newsletter .insta {
+        width: 100%;
+    }
+    .footer-newsletter .item {
+        padding: 10px;
+    }
+    .footer-recent-post {
+        margin-top: 30px;
+    }
+    .footer-newsletter {
+        margin-top: 30px;
+    }
+    #top_travell .slick-prev,
+    #top_travell .slick-next {
+        display: none;
+    }
+    .mamunur_rashid_top_book_btn {
+        margin-left: 0px;
+        display: inline-block;
+        margin-bottom: 30px;
+        margin-top: 15px;
+
+    }
+    #main-menu nav .navbar-nav .nav-item .nav-link.active::before {
+        display: none;
+    }
+
+    .slick-prev::before {
+        display: none;
+    }
+    .slick-next::before {
+        display: none;
+    }
+    #banner .slick-prev::before {
+        display: block;
+        line-height: 62px;
+    }
+    #banner .slick-next::before {
+        display: block;
+        line-height: 62px;
+    }
+    .index-2 #index-2-serch-top {
+        position: absolute;
+        top: 0%;
+        width: 100%;
+        z-index: 9;
+    }
+    .index-2 #banner {
+        height: 736px;
+    }
+    .dropdown-item {
+        color: #242424 !important;
+    }
+    #banner .banner_slider .banner_info {
+        margin-top: 2px;
+    }
+    .index-2 .index-2-serch-top-btn button {
+        margin: 33px 0px 48px;
+    }
+    .index-2 #banner .banner_slider .banner_info2 {
+        top: 275px;
+    }
+    .index-2 .navbar-nav {
+        padding-bottom: 20px;
+    }
+    #main-menu .navbar-toggler {
+        padding: 10px 15px 10px 10px;
+    }
+}
+
+
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #main-menu .nav-link {
+        line-height: 24px;
+    }
+    #main-menu .nav-link {
+        line-height: 20px;
+    }
+    #main-menu nav {
+        background: rgb(0, 0, 0);
+    }
+    .mamunur_rashid_top_book_btn {
+        margin-left: 0px;
+        display: inline-block;
+        margin-bottom: 30px;
+        margin-top: 15px;
+
+    }
+    #main-menu nav .navbar-nav .nav-item .nav-link.active::before {
+        display: none;
+    }
+    #main-menu nav.navbar-fixed ul li a {
+        line-height: 24px;
+    }
+    .index-2 #main-menu nav {
+        background: #242424;
+    }
+    .index-2 #main-menu .navbar ul li a {
+        color: #fff;
+    }
+    .book-button {
+        display: none;
+    }
+    #banner .banner_info h2 {
+        font-size: 45px;
+    }
+    #banner .banner_info h4 {
+        font-size: 30px;
+    }
+    #banner .h-seaerch-area {
+        bottom: -271px;
+    }
+    #choose-us {
+        padding: 365px 0px 96px;
+    }
+    .mamunur_rashid_form_sm {
+        margin-top: 15px;
+    }
+    .c-box.mr-pt-30 {
+        margin-top:30px;
+    }
+    #popular_destinations .c-box .v-a {
+        left: 20px;
+
+    }
+    #popular_tur .media-2 {
+        margin-top: 30px;
+    }
+    .n-box {
+        margin-top: 50px;
+    }
+    #latest_news .blog-3 {
+        margin-top: 30px;
+    }
+    .footer-newsletter .insta {
+        margin-bottom: 0px;
+        width: 100%;
+    }
+    .footer-newsletter .item {
+        padding: 9px;
+    }
+    .footer-recent-post {
+        margin-top: 30px;
+    }
+    .footer-newsletter {
+        margin-top: 30px;
+    }
+    #popular_turs .c-box article .footer a {
+        padding: 10px 10px;
+    }
+    #select_offer .c-box-3 {
+        margin-top: 30px;
+    }
+    #latest_news .blog-3 {
+        margin-top: 30px;
+    }
+    #latest_news .c-box img {
+        width: 100%;
+    }
+    #top_travell .slick-prev,
+    #top_travell .slick-next {
+        display: none;
+    }
+    .h-seaerch-area .form-row .form-control:first-child {
+        margin-bottom: 15px;
+    }
+    .index-2 #banner .banner_slider .banner_info2 h2 {
+        font-size: 46px;
+        margin-bottom: 5px;
+    }
+    .index-2 #choose-us {
+        padding: 850px 0px 100px;
+    }
+    .index-2 #index-2-serch-top {
+        top: 0%;
+    }
+    #control-tur::after {
+        background: none;
+    }
+    #control-tur .video-icon {
+        display: none;
+    }
+    .ct-b-r {
+        border-right: 0px solid #fff;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 30px;
+    }
+    #ourServices .s-box1 {
+        margin-bottom: 30px;
+    }
+    #ourServices .s-box2 {
+        margin-bottom: 30px;
+    }
+    .m-card-img img {
+        width: 100%;
+    }
+    #SpeacialServices .ss-box-1 {
+        margin-bottom: 30px;
+    }
+    #SpeacialServices .ss-box-2 {
+        margin-bottom: 30px;
+    }
+    #SpeacialServices .ss-box-3 {
+        margin-bottom: 30px;
+    }
+
+    .rq-bg {
+        margin-top: 133px;
+    }
+    .r-box {
+        margin-bottom: 30px;
+    }
+    #glallery img {
+        width: 100%;
+    }
+    #latest_news .c-box.blog-2 {
+        margin-top: 30px;
+    }
+    .index-2 #banner {
+        height: 736px;
+    }
+    .rq-bg::before {
+        height: 121.1%;
+
+    }
+    .index-1 #latest_news .c-box1 {
+        margin-bottom: 30px;
+    }
+    .index-2 #traveling_offers .c-box.c-box-3.text-center {
+        margin-top: 30px;
+    }
+    .blog #packdetails #latest_news {
+        padding: 43px 0px 20px;
+    }
+    #vs {
+        padding: 100px 0px 78px;
+    }
+    .dropdown-item {
+        color: #242424!important;
+    }
+    
+    #banner .banner_slider .banner_info {
+        margin-top: 2px;
+    }
+    .index-2 .index-2-serch-top-btn button {
+        margin: 33px 0px 48px;
+    }
+    #SpeacialServices {
+        padding: 95px 0px 70px;
+    }
+    .index-2 .navbar-nav {
+        padding-bottom: 20px;
+    }
+    #main-menu .navbar-toggler {
+        padding: 10px 15px 10px 10px;
+    }
+
+}
+
+
+
+@media (max-width: 575.98px) {
+    #main-menu .nav-link {
+        line-height: 24px;
+    }
+    #main-menu .nav-link {
+        line-height: 20px;
+    }
+    #main-menu nav {
+        background: rgb(0, 0, 0);
+    }
+    .rq-bg {
+        margin-top: 133px;
+    }
+    .rq-bg::before {
+        height: 121.1%;
+    }
+    .r-box {
+        margin-bottom: 30px;
+    }
+    .book-button {
+        display: none;
+    }
+    .h-seaerch-area .form-row .form-control:first-child {
+        margin-bottom: 15px;
+    }
+    .index-2 #main-menu nav {
+        background: #242424;
+    }
+    .index-2 #main-menu .navbar ul li a {
+        color: #fff;
+    }
+    #main-menu nav.navbar-fixed ul li a {
+        line-height: 24px;
+    }
+    #banner .banner_info h2 {
+        font-size: 36px;
+    }
+    #banner .banner_info h4 {
+        font-size: 28px;
+    }
+    #banner .h-seaerch-area {
+        bottom: -271px;
+        left: 0px;
+        background: black!important;
+    }
+    #choose-us {
+        padding: 363px 0px 100px;
+    }
+    #glallery img {
+        width: 100%;
+    }
+    .mamunur_rashid_form_sm {
+        margin-top: 15px;
+    }
+    .c-box.mr-pt-30 {
+        margin-top: 30px;
+    }
+    #popular_destinations .c-box .v-a {
+        left: 20px;
+
+    }
+    #popular_tur .media-2 {
+        margin-top: 30px;
+    }
+    .n-box {
+        margin-top: 50px;
+    }
+    #latest_news .blog-3 {
+        margin-top: 30px;
+    }
+    .footer-newsletter .insta {
+        margin-bottom: 0px;
+        width: 100%;
+    }
+    .footer-newsletter .item {
+        padding: 9px;
+    }
+    .footer-recent-post {
+        margin-top: 30px;
+    }
+    .footer-newsletter {
+        margin-top: 30px;
+    }
+    #popular_turs .c-box article .footer a {
+        padding: 10px 10px;
+    }
+    #select_offer .c-box-3 {
+        margin-top: 30px;
+    }
+    #latest_news .blog-3 {
+        margin-top: 30px;
+    }
+    #latest_news .c-box img {
+        width: 100%;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    #popular_destinations img {
+        width: 100%;
+    }
+    #popular_destinations .mr-px-15 {
+        padding: 0px 15px !important;
+    }
+    #popular_turs .c-box img {
+        width: 100%;
+    }
+    #top_travell .slick-prev,
+    #top_travell .slick-next {
+        display: none;
+    }
+    .footer-list {
+        margin-top: 30px;
+    }
+    .navbar-brand {
+        margin-left: 15px;
+    }
+    .index-2 #choose-us {
+        padding: 850px 0px 100px;
+    }
+    .index-2 #index-2-serch-top {
+        top: 0%;
+    }
+    #control-tur::after {
+        background: none;
+    }
+    #control-tur .video-icon {
+        display: none;
+    }
+    .ct-b-r {
+        border-right: 0px solid #fff;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 30px;
+    }
+    #ourServices .s-box1 {
+        margin-bottom: 30px;
+    }
+    #ourServices .s-box2 {
+        margin-bottom: 30px;
+    }
+    .m-card-img img {
+        width: 100%;
+    }
+    #SpeacialServices .ss-box-1 {
+        margin-bottom: 30px;
+        padding: 0px 100px;
+    }
+    #SpeacialServices .ss-box-2 {
+        margin-bottom: 30px;
+        padding: 0px 100px;
+    }
+    #SpeacialServices .ss-box-3 {
+        margin-bottom: 30px;
+        padding: 0px 100px;
+    }
+    #SpeacialServices .ss-box-4 {
+        padding: 0px 100px;
+    }
+    #traveling_offers .c-box-3 {
+        margin-top: 30px;
+    }
+    #traveling_offers .section-heading.one::before {
+        top: 59px;
+    }
+    #pro_service h2 {
+        font-size: 30px;
+    }
+    #popular_destinations .section-heading::before {
+        top: 60px;
+    }
+    .rq-bg {
+        margin-top: 133px;
+    }
+    .r-box {
+        margin-bottom: 30px;
+    }
+    #glallery img {
+        width: 100%;
+    }
+    #latest_news .c-box.blog-2 {
+        margin-top: 30px;
+    }
+    .section-heading::before {
+        top: 58px;
+    }
+    .index-2 #banner .banner_slider .banner_info2 h2 {
+        font-size: 36px;
+        margin-bottom: 5px;
+    }
+    .index-2 #banner {
+        height: 620px;
+    }
+    .index-2 #banner .banner_slider .banner_info2 {
+        top: 230px;
+    }
+    #main-menu nav .navbar-nav .nav-item .nav-link.active::before {
+        display: none;
+
+    }
+    #banner .banner_info p {
+        font-size: 14px;
+        padding: 0px 15px;
+    }
+    .dropdown-item {
+        color: #242424 !important;
+    }
+    .mamunur_rashid_top_book_btn {
+        margin-left: 15px;
+        display: inline-block;
+        margin-bottom: 30px;
+        margin-top: 15px;
+    }
+    #latest_news .c-box.c-box1{
+        margin-bottom: 30px;
+    }
+    .index-1 #banner .h-seaerch-area .nav-tabs .nav-item.nav-link {
+        width: 100%;
+    }
+    .index-2 #banner .banner_slider .banner_info2 h4 {
+        font-size: 30px;
+    }
+    .index-2 #banner .a-links .mamun_btn_link {
+        padding: 11px 10px;
+        margin-right: 5px;
+    }
+    
+    #banner .banner_slider .banner_info {
+        margin-top: 2px;
+    }
+    #banner .banner_info h2 {
+        margin: 10px 0px 5px;
+    }
+    .index-2 .index-2-serch-top-btn button {
+        margin: 33px 0px 48px;
+    }
+    .index-2 .navbar-nav {
+        padding-bottom: 20px;
+    }
+    #main-menu .navbar-toggler {
+        padding: 10px 15px 10px 10px;
+    }
+    #latest_news .c-box,
+    .packeg #popular_turs .c-box {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    #popular_destinations .c-box {
+        margin: 0px 50px;
+    }
+ 
+}
+
+@media (max-width: 487px){
+    .index-2 #choose-us {
+        padding: 900px 0px 100px;
+    }
+    #SpeacialServices .ss-box-1 {
+        padding: 0px 70px;
+    }
+    #SpeacialServices .ss-box-2 {
+        padding: 0px 70px;
+    }
+    #SpeacialServices .ss-box-3 {
+        padding: 0px 70px;
+    }
+    #SpeacialServices .ss-box-4 {
+        padding: 0px 70px;
+    }
+}
+
+@media (max-width: 346.98px){
+    #popular_destinations .section-heading::before {
+        top: 95px;
+    }
+}
+@media (max-width: 454px){
+    #traveling_offers .section-heading.one::before {
+        top: 95px;
+    }
+}
+@media (max-width: 442.98px){
+    #top_travell .section-heading::before {
+        top: 96px;
+    }
+    #popular_tur .p-t-c-m .media img{
+        width: 40%;
+        margin-bottom: 15px;
+        display: inline-block;
+    }
+    #latest_news .c-box,
+    .packeg #popular_turs .c-box {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    #popular_destinations .c-box {
+        margin: 0px 0px;
+    }
+}
+
+@media (max-width: 433px){
+    #popular_tur .section-heading::before {
+        top: 95px;
+    }
+    #SpeacialServices .ss-box-1 {
+        padding: 0px 50px;
+    }
+    #SpeacialServices .ss-box-2 {
+        padding: 0px 50px;
+    }
+    #SpeacialServices .ss-box-3 {
+        padding: 0px 50px;
+    }
+    #SpeacialServices .ss-box-4 {
+        padding: 0px 50px;
+    }
+}
+
+@media (max-width: 352px){
+    #traveling_offers .section-heading::before {
+        top: 95px;
+    }
+}
+
+@media (max-width: 390px){
+    .index-2 #banner .banner_slider .banner_info2 {
+        top: 206px;
+    }
+}
+@media (max-width: 355px){
+    .index-2 #banner .banner_slider .banner_info2 {
+        top: 185px;
+    }
+    #SpeacialServices .ss-box-1 {
+        padding: 0px 20px;
+    }
+    #SpeacialServices .ss-box-2 {
+        padding: 0px 20px;
+    }
+    #SpeacialServices .ss-box-3 {
+        padding: 0px 20px;
+    }
+    #SpeacialServices .ss-box-4 {
+        padding: 0px 20px;
+    }
+}

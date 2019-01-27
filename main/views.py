@@ -4,7 +4,9 @@ from django.views.generic.base import TemplateView
 from django.views.generic.edit import CreateView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from . import models
+from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.forms import UserCreationForm
+from django.http import HttpResponseRedirect, JsonResponse, HttpResponseForbidden, HttpResponse
 
 
 class SignUpView(CreateView):
@@ -14,6 +16,12 @@ class SignUpView(CreateView):
     form_class = UserCreationForm
 
 
-class HomeView(LoginRequiredMixin, TemplateView):
+class HomeView(TemplateView):
     template_name = "home.html"
+
+
+def store_logout(request):
+    logout(request)
+    return HttpResponseRedirect("/")
+
 

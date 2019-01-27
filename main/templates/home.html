@@ -1,3 +1,963 @@
+
 {% extends 'base.html' %}
+{% load static from staticfiles %}
 {% block content %}
+	<div class="site-preloader">
+		<div class="spinner">
+			<div class="double-bounce1"></div>
+			<div class="double-bounce2"></div>
+		</div>
+	</div>
+	<!--End Preloader-->
+
+	<!--Start Body Wrap-->
+	<div id="body-wrap">
+		<div id="main-menu">
+			<nav class="navbar navbar-expand-lg">
+				<div class="container">
+					<a class="navbar-brand" href="#">
+{#						<img src="{% static 'theme/img/logo.png' %}" alt="">#}
+                        <h1 style="color: #356ad8">GoSafar</h1>
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-auto">
+								<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true"
+									aria-expanded="false">
+									Home
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+										<a class="dropdown-item" href="index.html">Home1</a>
+										<a class="dropdown-item" href="index-2.html">Home2</a>
+								</div>
+							</li>
+								<li class="nav-item">
+									<a class="nav-link" href="packges.html">Package</a>
+								</li>
+{#								<li class="nav-item">#}
+{#									<a class="nav-link" href="hotels.html">Hotel</a>#}
+{#								</li>#}
+								<li class="nav-item">
+									<a class="nav-link" href="ourvahicles.html">Vehicles</a>
+								</li>
+{#								<li class="nav-item">#}
+{#									<a class="nav-link" href="blog.html">Blog</a>#}
+{#								</li>#}
+{#								<li class="nav-item dropdown">#}
+{#									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true"#}
+{#										aria-expanded="false">#}
+{#										Pages#}
+{#									</a>#}
+{#									<div class="dropdown-menu" aria-labelledby="navbarDropdown2">#}
+{#										<a class="dropdown-item" href="AboutUs.html">About Us</a>#}
+{#										<a class="dropdown-item" href="gallery.html">Gallery Grid</a>#}
+{#										<a class="dropdown-item" href="ticket-booking.html">Ticket Booking</a>#}
+{#										<a class="dropdown-item" href="ourdestination.html">Our Destination</a>#}
+{#										<a class="dropdown-item" href="blog-sidebar-left.html">Blog Sidebar left</a>#}
+{#										<a class="dropdown-item" href="blog-sidebar-right.html">Blog Sidebar Right</a>#}
+{#										<a class="dropdown-item" href="faq.html">FAQ</a>#}
+{#										<a class="dropdown-item" href="404.html">404</a>#}
+{#									</div>#}
+{#								</li>#}
+								<li class="nav-item">
+									<a class="nav-link" href="contactUs.html">Contact Us</a>
+								</li>
+							</ul>
+						<a class="mamunur_rashid_top_book_btn" href="ticket-booking.html">Book Online</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+		<!-- =========== nav end =========== -->
+
+		<div id="banner">
+			<div class="overly"></div>
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-xl-8 col-md-10 text-center banner_slider">
+						<div class="banner_info">
+							<article>
+								<h4>A Time to Travel</h4>
+								<h2>Refresh and Relax</h2>
+								<p>There are many variations of passages of Lorem Ipsum available, but the majority
+									have suffered alteration in some njected randomised words.</p>
+							</article>
+							<article>
+								<h4>A Time to Ride</h4>
+								<h2>Refresh and Ride</h2>
+								<p>There are many variations of passages of Lorem Ipsum available, but the majority
+									have suffered alteration in some njected randomised words.</p>
+							</article>
+							<article>
+								<h4>A Time to Ture</h4>
+								<h2>Refresh and Ture</h2>
+								<p>There are many variations of passages of Lorem Ipsum available, but the majority
+									have suffered alteration in some njected randomised words.</p>
+							</article>
+						</div>
+					</div>
+				</div>
+				<div class="row b-serch">
+					<div class="col-12">
+						<div class="h-seaerch-area">
+							<!-- Nav tabs -->
+							<nav>
+								<div class="nav nav-tabs margin-10" id="nav-tab" role="tablist">
+									<a class="nav-item nav-link normal-t active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+									  aria-controls="nav-home" aria-selected="true">
+										<i class="fa fa-search"></i> Quick Search
+									</a>
+									<a class="nav-item nav-link advance" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+									  aria-controls="nav-profile" aria-selected="false">
+										<i class="fa fa-sliders"></i> Advanced Search
+									</a>
+								</div>
+							</nav>
+							<div class="tab-content margin-10" id="nav-tabContent">
+								<div class="tab-pane fade show normal active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+									<form>
+										<div class="form-row">
+											<div class="col-md-6 col-lg-3">
+												<input type="text" class="form-control" placeholder="Insert Keyword">
+											</div>
+											<div class="col-md-6 col-lg-3">
+												<select class="custom-select" id="inlineFormCustomSelectPref">
+													<option selected>All Destriations</option>
+													<option value="1">Destriations</option>
+													<option value="2">Destriations</option>
+													<option value="3">Destriations</option>
+												</select>
+											</div>
+											<div class="col-md-6 col-lg-3">
+												<select class="custom-select mamunur_rashid_form_sm">
+													<option selected>All Typologes</option>
+													<option value="1">Typologes</option>
+													<option value="2">Typologes</option>
+													<option value="3">Typologes</option>
+												</select>
+											</div>
+											<div class="col-md-6 col-lg-3">
+												<button type="submit" class="form-control h-serch mamunur_rashid_form_sm">SEARCH</button>
+											</div>
+										</div>
+									</form>
+								</div>
+								<div class="tab-pane fade advance-c" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+									<form>
+										<div class="form-row">
+											<div class="col-md-6 col-lg-3">
+												<input type="text" class="form-control" placeholder="Insert Keyword">
+											</div>
+											<div class="col-md-6 col-lg-3">
+												<select class="custom-select">
+													<option selected>All Destriations</option>
+													<option value="1">Destriations</option>
+													<option value="2">Destriations</option>
+													<option value="3">Destriations</option>
+												</select>
+											</div>
+											<div class="col-md-6 col-lg-3">
+												<select class="custom-select mamunur_rashid_form_sm">
+													<option selected>All Typologes</option>
+													<option value="1">Typologes</option>
+													<option value="2">Typologes</option>
+													<option value="3">Typologes</option>
+												</select>
+											</div>
+											<div class="col-md-6 col-lg-3">
+												<button type="submit" class="form-control h-serch  mamunur_rashid_form_sm">SEARCH</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- =========== banner end =========== -->
+
+		<!-- =========== Whay Choose Us Start ============ -->
+		<section id="choose-us">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-7 col-md-10 text-center">
+						<h2 class="section-heading">Whay Choose Us</h2>
+						<p class="section-paragraph">There are many variations of passages of Lorem Ipsum available but the majority have
+							suffered alteration in some form injected humour.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<div class="c-box text-center">
+							<div class="icon">
+								<i class="fa fa-globe"></i>
+							</div>
+							<h4>Diverse Destinattions</h4>
+							<p>There are many variations of the is a passages of Lorem Ipsum that available majority.</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="c-box text-center">
+							<div class="icon">
+								<i class="fa fa-diamond"></i>
+							</div>
+							<h4>Diverse Destinattions</h4>
+							<p>There are many variations of the is a passages of Lorem Ipsum that available majority.</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="c-box text-center">
+							<div class="icon">
+								<i class="fa fa-snowflake-o"></i>
+							</div>
+							<h4>Diverse Destinattions</h4>
+							<p>There are many variations of the is a passages of Lorem Ipsum that available majority.</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="c-box text-center">
+							<div class="icon">
+								<i class="fa fa-plane"></i>
+							</div>
+							<h4>Diverse Destinattions</h4>
+							<p>There are many variations of the is a passages of Lorem Ipsum that available majority.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- =========== Whay Choose Us End ============ -->
+
+
+		<!-- =========== Popular Tours Start ============= -->
+
+		<section id="popular_turs">
+			<div class="overly"></div>
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-7 col-md-10 text-center">
+						<h2 class="section-heading">Popular Tours</h2>
+						<p class="section-paragraph">There are many variations of passages of Lorem Ipsum available but the majority have
+							suffered alteration in some form injected humour.</p>
+					</div>
+				</div>
+				<div class="row tur-slider">
+					<div class="col-lg-4">
+						<div class="c-box">
+							<div class="img">
+								<img class="img-fluid" src="{% static 'theme/img/popular-turs/2.png' %}" alt="">
+							</div>
+							<article>
+								<h4>City TouTrs In Europe, Paris</h4>
+								<div class="b-c">
+									<ul>
+										<li>
+											<i class="fa fa-clock-o"></i> 7 Days
+										</li>
+										<li><span class="span">|</span></li>
+										<li>
+											<i class="fa fa-user"></i> 3 People
+										</li>
+									</ul>
+								</div>
+								<p>There are many variations of passages of Lorem Ipsum available but the majority to have injected humour.</p>
+								<div class="footer d-flex justify-content-between">
+									<a href="packagedetails.html">View Details</a>
+									<span class="align-self-center">$700</span>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="c-box">
+							<div class="img">
+								<img class="img-fluid" src="{% static 'theme/img/popular-turs/3.png' %}" alt="">
+							</div>
+							<article>
+								<h4>City TouTrs In Europe, Paris</h4>
+								<div class="b-c">
+									<ul>
+										<li><i class="fa fa-clock-o"></i> 7 Days</li>
+										<li><span class="span">|</span></li>
+										<li><i class="fa fa-user"></i> 3 People</li>
+									</ul>
+								</div>
+								<p>There are many variations of passages of Lorem Ipsum available but the majority to have injected humour.</p>
+								<div class="footer d-flex justify-content-between">
+									<a href="packagedetails.html">View Details</a>
+									<span class="align-self-center">$700</span>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="c-box">
+							<div class="img">
+								<img class="img-fluid" src="{% static 'theme/img/popular-turs/2.png' %}" alt="">
+							</div>
+							<article>
+								<h4>City TouTrs In Europe, Paris</h4>
+								<div class="b-c">
+									<ul>
+										<li><i class="fa fa-clock-o"></i> 7 Days</li>
+										<li><span class="span">|</span></li>
+										<li><i class="fa fa-user"></i> 3 People</li>
+									</ul>
+								</div>
+								<p>There are many variations of passages of Lorem Ipsum available but the majority to have injected humour.</p>
+								<div class="footer d-flex justify-content-between">
+									<a href="packagedetails.html">View Details</a>
+									<span class="align-self-center">$700</span>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="c-box">
+							<div class="img">
+								<img class="img-fluid" src="{% static 'theme/img/popular-turs/3.png' %}" alt="">
+							</div>
+							<article>
+								<h4>City TouTrs In Europe, Paris</h4>
+								<div class="b-c">
+									<ul>
+										<li><i class="fa fa-clock-o"></i> 7 Days</li>
+										<li><span class="span">|</span></li>
+										<li><i class="fa fa-user"></i> 3 People</li>
+									</ul>
+								</div>
+								<p>There are many variations of passages of Lorem Ipsum available but the majority to have injected humour.</p>
+								<div class="footer d-flex justify-content-between">
+									<a href="packagedetails.html">View Details</a>
+									<span class="align-self-center">$700</span>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="c-box">
+							<div class="img">
+								<img class="img-fluid" src="{% static 'theme/img/popular-turs/1.png' %}" alt="">
+							</div>
+							<article>
+								<h4>City TouTrs In Europe, Paris</h4>
+								<div class="b-c">
+									<ul>
+										<li><i class="fa fa-clock-o"></i> 7 Days</li>
+										<li><span class="span">|</span></li>
+										<li><i class="fa fa-user"></i> 3 People</li>
+									</ul>
+								</div>
+								<p>There are many variations of passages of Lorem Ipsum available but the majority to have injected humour.</p>
+								<div class="footer d-flex justify-content-between">
+									<a href="packagedetails.html">View Details</a>
+									<span class="align-self-center">$700</span>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- =========== Popular Tours end ============= -->
+
+		<!-- =============== popular Destinations Start ================= -->
+		<section id="popular_destinations">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-7 col-md-10 text-center">
+						<h2 class="section-heading">Popular Destinations</h2>
+						<p class="section-paragraph">There are many variations of passages of Lorem Ipsum available but the majority have
+							suffered alteration in some form injected humour.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-sm-6 p-0 mr-px-15">
+						<div class="c-box">
+							<div class="img">
+								<img class="img-fluid" src="{% static 'theme/img/destinations/1.jpg' %}" alt="">
+							</div>
+							<article>
+								<div class="footer d-flex justify-content-between">
+									<div>
+										<span><i class="fa fa-map-marker"></i> America</span>
+										<a class="v-a" href="ourdestination.html">View All Tours</a>
+									</div>
+									<p class="align-self-center">8 Tours</p>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6 p-0 mr-px-15">
+						<div class="c-box">
+							<div class="img">
+								<img class="img-fluid" src="{% static 'theme/img/destinations/2.jpg' %}" alt="">
+							</div>
+							<article>
+								<div class="footer d-flex justify-content-between">
+									<div>
+										<span><i class="fa fa-map-marker"></i> America</span>
+										<a class="v-a" href="ourdestination.html">View All Tours</a>
+									</div>
+									<p class="align-self-center">8 Tours</p>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6 p-0 mr-px-15">
+						<div class="c-box">
+							<div class="img">
+								<img class="img-fluid" src="{% static 'theme/img/destinations/3.jpg' %}" alt="">
+							</div>
+							<article>
+								<div class="footer d-flex justify-content-between">
+									<div>
+										<span><i class="fa fa-map-marker"></i> America</span>
+										<a class="v-a" href="ourdestination.html">View All Tours</a>
+									</div>
+									<p class="align-self-center">8 Tours</p>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6 p-0 mr-px-15">
+						<div class="c-box">
+							<div class="img">
+								<img class="img-fluid" src="{% static 'theme/img/destinations/4.jpg' %}" alt="">
+							</div>
+							<article>
+								<div class="footer d-flex justify-content-between">
+									<div>
+										<span><i class="fa fa-map-marker"></i> America</span>
+										<a class="v-a" href="ourdestination.html">View All Tours</a>
+									</div>
+									<p class="align-self-center">8 Tours</p>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6 p-0 mr-px-15">
+						<div class="c-box">
+							<div class="img">
+								<img class="img-fluid" src="{% static 'theme/img/destinations/5.jpg' %}" alt="">
+							</div>
+							<article>
+								<div class="footer d-flex justify-content-between">
+									<div>
+										<span><i class="fa fa-map-marker"></i> America</span>
+										<a class="v-a" href="ourdestination.html">View All Tours</a>
+									</div>
+									<p class="align-self-center">8 Tours</p>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6 p-0 mr-px-15">
+						<div class="c-box">
+							<div class="img">
+								<img class="img-fluid" src="{% static 'theme/img/destinations/6.jpg' %}" alt="">
+							</div>
+							<article>
+								<div class="footer d-flex justify-content-between">
+									<div>
+										<span><i class="fa fa-map-marker"></i> America</span>
+										<a class="v-a" href="ourdestination.html">View All Tours</a>
+									</div>
+									<p class="align-self-center">8 Tours</p>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- =============== popular Destinations End ================= -->
+
+
+		<!--================ Our Offers Area Start ======================-->
+		<section id="offers">
+			<div class="overly-2"></div>
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-7 col-md-10 text-center">
+						<h2>Gate 10% On Your Next Travel</h2>
+						<p>1000 $ for person - 6 Night</p>
+						<a class="o-btn" href="packges.html">More Datails <i class="fa fa-angle-double-right"></i></a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--================ Our Offers Area End ======================-->
+
+		<!--================  Select Offers Area Start ======================-->
+
+		<section id="select_offer">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-7 col-md-10 text-center">
+						<h2 class="section-heading">Whay Choose Us</h2>
+						<p class="section-paragraph">There are many variations of passages of Lorem Ipsum available but the majority have
+							suffered alteration in some form injected humour.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-2 col-md-4 col-6">
+						<div class="c-box text-center">
+							<div class="icon">
+								<i class="fa fa-flag"></i>
+							</div>
+							<p>Different</p>
+							<span>Countries</span>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-4 col-6">
+						<div class="c-box text-center">
+							<div class="icon">
+								<i class="fa fa-bus"></i>
+							</div>
+							<p>Bus</p>
+							<span>Travel</span>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-4 col-6">
+						<div class="c-box c-box-3 text-center">
+							<div class="icon">
+								<i class="fa fa-cutlery"></i>
+							</div>
+							<p>Food</p>
+							<span>Travel</span>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-4 col-6">
+						<div class="c-box mr-pt-30 text-center">
+							<div class="icon">
+								<i class="fa fa-umbrella"></i>
+							</div>
+							<p>Summer</p>
+							<span>Rest</span>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-4 col-6">
+						<div class="c-box mr-pt-30 text-center">
+							<div class="icon">
+								<i class="fa fa-ship"></i>
+							</div>
+							<p>Ship</p>
+							<span>Cruises</span>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-4 col-6">
+						<div class="c-box mr-pt-30 text-center">
+							<div class="icon">
+								<i class="fa fa-map-o"></i>
+							</div>
+							<p>Mountains</p>
+							<span>Tours</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--================ Select Offers Area End ======================-->
+
+		<!--================ top travelling Area Start ================= -->
+
+		<section id="top_travell">
+			<div class="overly"></div>
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-7 col-md-10 text-center">
+						<h2 class="section-heading">Top Travelling Destinations</h2>
+						<p class="section-paragraph">There are many variations of passages of Lorem Ipsum available but the majority have
+							suffered alteration in some form injected humour.</p>
+					</div>
+				</div>
+				<div class="row top-t-slider">
+					<div class="col-lg-4">
+						<div class="c-box">
+							<div class="img">
+								<img class="img-fluid align-self-center" src="{% static 'theme/img/destinations/t1.png' %}" alt="">
+							</div>
+							<article>
+								<h4>Eiffel Tower</h4>
+								<p>There are many variations of passages Lorem Ipsum available but the that as a majority alteration Dummy
+									Text.</p>
+								<div class="footer">
+									<a href="ourdestination.html">More Details</a>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="c-box">
+							<div class="img">
+								<img class="img-fluid align-self-center" src="{% static 'theme/img/destinations/t2.png' %}" alt="">
+							</div>
+							<article>
+								<h4>Tower Bridge</h4>
+								<p>There are many variations of passages Lorem Ipsum available but the that as a majority alteration Dummy
+									Text.</p>
+								<div class="footer">
+									<a href="ourdestination.html">More Details</a>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="c-box">
+							<div class="img">
+								<img class="img-fluid align-self-center" src="{% static 'theme/img/destinations/t3.png' %}" alt="">
+							</div>
+							<article>
+								<h4>Eiffel Tower</h4>
+								<p>There are many variations of passages Lorem Ipsum available but the that as a majority alteration Dummy
+									Text.</p>
+								<div class="footer">
+									<a href="ourdestination.html">More Details</a>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="c-box">
+							<div class="img">
+								<img class="img-fluid align-self-center" src="{% static 'theme/img/destinations/t1.png' %}" alt="">
+							</div>
+							<article>
+								<h4>Tower Bridge</h4>
+								<p>There are many variations of passages Lorem Ipsum available but the that as a majority alteration Dummy
+									Text.</p>
+								<div class="footer">
+									<a href="ourdestination.html">More Details</a>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="c-box">
+							<div class="img">
+								<img class="img-fluid align-self-center" src="{% static 'theme/img/destinations/t2.png' %}" alt="">
+							</div>
+							<article>
+								<h4>Eiffel Tower</h4>
+								<p>There are many variations of passages Lorem Ipsum available but the that as a majority alteration Dummy
+									Text.</p>
+								<div class="footer">
+									<a href="ourdestination.html">More Details</a>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--================ top travelling Area End ================= -->
+		<!-- =============== popular Torisum Countries Area start =============== -->
+		<section id="popular_tur">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-7 col-md-10 text-center">
+						<h2 class="section-heading">Popular Tourism Countries</h2>
+						<p class="section-paragraph">There are many variations of passages of Lorem Ipsum available but the majority have
+							suffered alteration in some form injected humour.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xl-8">
+						<div class="row p-t-c-m">
+							<div class="col-lg-6">
+								<div class="media">
+									<img class="mr-3" src="{% static 'theme/img/torisumCountries/1.png' %}" alt="">
+									<div class="media-body align-self-center">
+										<h5 class="mt-0">Asia Tour</h5>
+										<p>There many variat is passage of Lorem at Ipsum available.</p>
+										<a href="">View all tours</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="media media-2">
+									<img class="mr-3" src="{% static 'theme/img/torisumCountries/2.png' %}" alt="">
+									<div class="media-body align-self-center">
+										<h5 class="mt-0">Asia Tour</h5>
+										<p>There many variat is passage of Lorem at Ipsum available.</p>
+										<a href="#">View all tours</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="media mamunur_rashid_t_mt_30">
+									<img class="mr-3" src="{% static 'theme/img/torisumCountries/3.png' %}" alt="">
+									<div class="media-body align-self-center">
+										<h5 class="mt-0">Asia Tour</h5>
+										<p>There many variat is passage of Lorem at Ipsum available.</p>
+										<a href="#">View all tours</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="media mamunur_rashid_t_mt_30">
+									<img class="mr-3" src="{% static 'theme/img/torisumCountries/4.png' %}" alt="">
+									<div class="media-body align-self-center">
+										<h5 class="mt-0">Asia Tour</h5>
+										<p>There many variat is passage of Lorem at Ipsum available.</p>
+										<a href="#">View all tours</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 newsletter">
+						<div class="n-box">
+							<div class="overly"></div>
+							<article>
+								<h4>Sign up for</h4>
+								<h3>Our Newsletter</h3>
+								<p>But I must explain to you how all this istaken idea of denouncing.</p>
+								<form action="#">
+									<input type="text" class="mamunur_rashid_form" placeholder="Your Name">
+									<input type="email" class="mamunur_rashid_form" placeholder="Your Email Address">
+									<button type="submit" class="mamunur_rashid_form mr-btn">SUBSCRIBE</button>
+								</form>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- =============== popular Torisum Countries Area End =============== -->
+
+		<!-- =============== Latest News Area Start ============================ -->
+		<section id="latest_news">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-7 col-md-10 text-center">
+						<h2 class="section-heading">Latest News</h2>
+						<p class="section-paragraph">There are many variations of passages of Lorem Ipsum available but the majority have
+							suffered alteration in some form injected humour.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-6">
+						<div class="c-box c-box1">
+							<div class="img">
+								<img class="img-fluid" src="{% static 'theme/img/blog/b1.png' %}" alt="">
+							</div>
+							<article>
+								<a href="blog-details-right.html">
+									<h4>What a hung parliament means for your summer holiday</h4>
+								</a>
+								<div class="b-c">
+									<ul>
+										<li><i class="fa fa-clock-o"></i> 11 Sep, 2018</li>
+										<li><span class="span">|</span></li>
+										<li><i class="fa fa-comment-o"></i> 3 Comment</li>
+									</ul>
+								</div>
+								<p>There are many variations of passages of Lorem Ipsum available but the majority it a have suffered
+									alteration.</p>
+							</article>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="c-box">
+							<div class="img">
+								<img class="img-fluid" src="{% static 'theme/img/blog/b2.png' %}" alt="">
+							</div>
+							<article>
+								<a href="blog-details-right.html">
+									<h4>What a hung parliament means for your summer holiday</h4>
+								</a>
+								<div class="b-c">
+									<ul>
+										<li><i class="fa fa-clock-o"></i> 11 Sep, 2018</li>
+										<li><span class="span">|</span></li>
+										<li><i class="fa fa-comment-o"></i> 3 Comment</li>
+									</ul>
+								</div>
+								<p>There are many variations of passages of Lorem Ipsum available but the majority it a have suffered
+									alteration.</p>
+							</article>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="c-box blog-3">
+							<div class="img">
+								<img class="img-fluid" src="{% static 'theme/img/blog/b3.png' %}" alt="">
+							</div>
+							<article>
+								<a href="blog-details-right.html">
+									<h4>What a hung parliament means for your summer holiday</h4>
+								</a>
+								<div class="b-c">
+									<ul>
+										<li><i class="fa fa-clock-o"></i> 11 Sep, 2018</li>
+										<li><span class="span">|</span></li>
+										<li><i class="fa fa-comment-o"></i> 3 Comment</li>
+									</ul>
+								</div>
+								<p>There are many variations of passages of Lorem Ipsum available but the majority it a have suffered
+									alteration.</p>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- =============== Latest News Area End ============================ -->
+
+		<!-- footer part start -->
+		<footer id="contact" class="theme-footer-one">
+			<div class="top-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-sm-6 about-widget">
+							<div class="f-logo">
+{#								<img src="{% static 'theme/img/logo.png' %}" alt="">#}
+                                <h1 style="color: #356ad8">GoSafar</h1>
+							</div>
+							<p>There are many variations of passages of that Lorem Ipsum available but the majority have is suffered
+								alteration.</p>
+							<div class="queries">
+								<ul>
+									<li>
+										<i class="fa fa-phone" aria-hidden="true"></i>
+										<a href="tel:+1234567900">(+1) 234 567 900</a>
+								</li>
+								<li>
+										<i class="fa fa-map-marker" aria-hidden="true"></i>
+										<a href="#">123 Usa, New Work</a>
+								</li>
+								<li>
+										<i class="fa fa-envelope" aria-hidden="true"></i>
+										<a href="mailto:demo@gmail.com">demo@gmail.com</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- /.footer-recent-post -->
+						<div class="col-lg-3 col-sm-6 footer-list">
+							<h6 class="title">Usefull Links</h6>
+							<ul>
+								<li>
+									<a href="#">Wedding Tours</a>
+								</li>
+								<li>
+									<a href="VehiclesSpecification.html">Bus Tours</a>
+								</li>
+								<li>
+									<a href="#">Food & Wine</a>
+								</li>
+								<li>
+									<a href="#">Summer Rest</a>
+								</li>
+								<li>
+									<a href="gallery.html">Tours Photo Gallery</a>
+								</li>
+							</ul>
+						</div>
+						<!-- /.about-widget -->
+						<div class="col-lg-3 col-sm-6 footer-recent-post">
+							<h6 class="title">Recent News</h6>
+							<ul>
+								<li class="d-flex">
+									<img src="{% static 'theme/img/blog/f1.png' %}" alt="" class="float-left">
+									<div class="post float-left">
+										<a href="blog-details-right.html">Discovering
+											the Beauty of New Zealand</a>
+										<div class="date">Feb 06, 2018</div>
+									</div>
+								</li>
+								<li class="d-flex">
+									<img src="{% static 'theme/img/blog/f1.png' %}" alt="" class="float-left">
+									<div class="post float-left">
+										<a href="blog-details-right.html">Discovering
+											the Beauty of New Zealand</a>
+										<div class="date"> Mar 20, 2018</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- /.footer-list -->
+						<div class="col-lg-3 col-sm-6 footer-newsletter">
+							<h6 class="title">Instagram</h6>
+							<div class="row">
+								<div class="col-md-4 col-4 item">
+									<img class="insta img-fluid" src="{% static 'theme/img/footer/ins-1.png' %}" alt="">
+								</div>
+								<div class="col-md-4 col-4 item">
+									<img class="insta img-fluid" src="{% static 'theme/img/footer/ins-2.png' %}" alt="">
+								</div>
+								<div class="col-md-4 col-4 item">
+									<img class="insta img-fluid" src="{% static 'theme/img/footer/ins-3.png' %}" alt="">
+								</div>
+								<div class="col-md-4 col-4 item">
+									<img class="insta img-fluid" src="{% static 'theme/img/footer/ins-3.png' %}" alt="">
+								</div>
+								<div class="col-md-4 col-4 item">
+									<img class="insta img-fluid" src="{% static 'theme/img/footer/ins-2.png' %}" alt="">
+								</div>
+								<div class="col-md-4 col-4 item">
+									<img class="insta img-fluid" src="{% static 'theme/img/footer/ins-1.png' %}" alt="">
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-12">
+									<div class="social-link">
+										<span>Follow Us : </span>
+										<a href="#">
+											<i class="fa fa-facebook"></i>
+										</a>
+										<a href="#">
+											<i class="fa fa-twitter"></i>
+										</a>
+										<a href="#">
+											<i class="fa fa-instagram"></i>
+										</a>
+										<a href="#">
+											<i class="fa fa-linkedin"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /.row -->
+				</div>
+				<!-- /.container -->
+			</div>
+			<!-- /.top-footer -->
+			<div class="bottom-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 text-center ">
+							<p>&copy; Copyrights 2018. All Rights Reserved.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /.bottom-footer -->
+		</footer>
+		<!-- footer part end -->
+
+
+
+		<!--Start ClickToTop-->
+		<div class="totop">
+			<a href="#top"><i class="fa fa-arrow-up"></i></a>
+		</div>
+		<!--End ClickToTop-->
+	</div>
+F
 {% endblock %}

@@ -1,0 +1,28 @@
+#fourzwro{
+  background: url(../img/other/404bg.png) no-repeat center;
+  background-size: cover;
+  padding: 100px 0px 100px;
+}
+#fourzwro h3{
+  color:#356ad8;
+  margin-top: 30px;
+}
+#fourzwro a{
+background: #356ad8;
+border: 2px solid #356ad8;
+color: #fff;
+padding: 12px 25px;
+border-radius: .25rem;
+display: inline-block;
+margin-top: 20px;
+-webkit-transition: all .3s;
+-moz-transition: all .3s;
+-ms-transition: all .3s;
+-o-transition: all .3s;
+transition: all .3s;
+}
+#fourzwro a:hover{
+  background: none;
+  border: 2px solid #356ad8;
+  color: #356ad8;
+}

@@ -1,0 +1,316 @@
+.packeg #popular_turs{
+  background: none;
+  background-color: #fff;
+}
+.packeg #popular_turs .c-box {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+.packeg #popular_turs .c-box:hover {
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+.packeg #popular_turs .b-c {
+  margin: 10px 0px 7px;
+}
+
+/* hotel css */
+.hotel #popular_turs .c-box .img{
+  position: relative;
+}
+.hotel #popular_turs .c-box .img .sd-box{
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  background: #356ad8;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: 400;
+}
+.hotel #popular_turs .c-box article .footer .left span{
+  font-size: 15px;
+  font-weight: 400;
+  color: #242424;
+}
+.hotel #popular_turs .c-box article .footer .right{
+font-size: 30px;
+font-weight: 600;
+color: #356ad8;
+}
+.hotel #popular_turs .c-box article .footer .left .stars li{
+  display: inline-block;
+}
+.hotel #popular_turs .c-box article .footer .left .stars li i{
+color: #fecf14;
+font-size: 16px;
+}
+
+#hotelDetails  .box{
+  padding: 30px 15px;
+  
+}
+#hotelDetails  p{
+  font-size: 18px;
+  font-weight: 500;
+}
+#hotelDetails  .box i{
+ font-size: 40px;
+ color: #b3b3b3;
+ margin-right: 15px;
+}
+#hotelDetails .box-1{
+  background: #356ad8;
+  text-align: center;
+  color: #fff;
+  border-radius: .25rem;
+
+}
+#hotelDetails .box-1 .h2{
+  font-size: 36px;
+  font-weight: 400;
+}
+#hotelDetails  .box-1 h2{
+  color: #fff;
+}
+#hotelDetails .box-1 p{
+ font-size: 18px;
+}
+#hotelDetails {
+  padding: 100px 0px 100px;
+}
+#hotelDetails .book-now{
+   background: #356ad8;
+   color: #FFF;
+   padding: 12px 25px;
+   border-radius: .25rem;
+   display: inline-block;
+   margin-top: 50px;
+   border: 2px solid #356ad8;
+   -webkit-transition: all .3s;
+   -moz-transition: all .3s;
+   -ms-transition: all .3s;
+   -o-transition: all .3s;
+   transition: all .3s;
+}
+#hotelDetails .book-now:hover{
+   background: none;
+   border-color: #356ad8;
+   color: #356ad8;
+}
+
+/* ========= package details ========== */
+#packdetails{
+  padding: 100px 0px;
+}
+#packdetails .catagori ul{
+  background: #f2f2f2;
+}
+#packdetails .catagori ul li{
+  display: inline-block;
+  text-align: center;
+  width: 16.21%;
+  padding: 15px 0px;
+}
+#packdetails .catagori ul li a.active{
+box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+transform: scale(1.1);
+background: #fff;
+}
+
+
+#packdetails .post ul li{
+font-size: 12px;
+display: inline-block;
+}
+#packdetails .post{
+  margin-top: 50px;
+}
+#packdetails .post .date li{
+ margin-right: 10px;
+}
+#packdetails .post .date{
+  margin-bottom: 5px;
+}
+#packdetails .post .date i{
+ color: #bcbcbc;
+ margin-right: 7px;
+}
+#packdetails .post h3 span{
+  color: #356ad8;
+  padding-left: 50px;
+}
+#packdetails .list ul li {
+  display: block;
+  padding: 7px 15px;
+
+}
+#packdetails .list ul li .left-l{
+ display: inline-block;
+  text-align: left;
+}
+#packdetails .list ul li .right-r{
+  display: inline-block;
+  float: right;
+ }
+
+#packdetails .list ul li .left-l P{
+float: left;
+}
+#packdetails .list ul li .right-r P{
+ float: right;
+}
+
+#packdetails .list{
+  padding-top: 50px;
+}
+#packdetails .list .l-c1{
+  background: #f6f6f6;
+}
+#packdetails .list .l-c2{
+  background: #fafafa;
+}
+#packdetails .whay-choose-pac{
+  margin-top: 50px;
+}
+#packdetails .whay-choose-pac h3{
+ margin-bottom: 15px;
+}
+#packdetails .whay-choose-pac{
+  margin-top: 50px;
+}
+#packdetails .whay-choose-pac ul li i{
+color: #356ad8;
+margin-right: 5px;
+font-size: 16px;
+font-weight: 600;
+line-height: 30px;
+}
+#latest_news {
+  padding: 22px 0px 0px;
+  background: #fff;
+}
+#latest_news .c-box{
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.219);
+}
+.mamun-t-book-form{
+  border: 1px solid #e2e2e2;
+  padding: 20px;
+}
+.mamun-t-book-form h3{
+  margin-bottom: 14px;
+}
+.mamun-t-book-form .mamunCustonBookForm{
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  border: 0px;
+  background: #f4f3f3;
+}
+.mamun-t-book-form .text-area-class{
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  border: 0px;
+  background: #f4f3f3;
+  height: 95px;
+  resize: none;
+}
+.mamun-t-book-form .my-btn-1{
+  width: 100%;
+  text-align: center;
+  padding: 10px 20px;
+  border: 2px solid #242424;
+  background: #242424;
+  color: #fff;
+  display: block;
+  margin-bottom: 15px;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+.mamun-t-book-form .my-btn-2{
+  width: 100%;
+  text-align: center;
+  padding: 10px 20px;
+  border: 2px solid #356ad8;
+  background: #356ad8;
+  color: #fff;
+  display: block;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+.mamun-t-book-form .my-btn-1:hover{
+  background: none;
+  color: #242424;
+  border-color: #242424;
+}
+.mamun-t-book-form .my-btn-2:hover{
+  background: none;
+  color: #356ad8;
+  border-color: #356ad8;
+}
+.my-contact-box{
+  background: url(../img/other/myContactBox.jpg) no-repeat center;
+  background-size: cover;
+  margin-top: 50px;
+  padding: 50px 20px;
+  color: #fff;
+  position: relative;
+}
+.over-lay-box{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: -0;
+}
+.my-contact-box article{
+  position: inherit;
+  z-index: 99;;
+}
+.my-contact-box h3{
+  color: #fff;
+  margin-bottom: 10px;
+}
+.my-contact-box p{
+  margin: 0px 0px 30px;
+}
+.my-contact-box ul li{
+  line-height: 30px;
+}
+.my-contact-box ul li i{
+  margin-right: 7px;
+}
+.my-contact-box a{
+  color: #fff;
+}
+#popular_turs {
+    padding: 100px 0px 70px;
+}
+
+.hotel #popular_turs .c-box .img {
+
+    position: relative;
+
+}
+.hotel #popular_turs .c-box .img img {
+    width: 100%;
+}
+.packeg #popular_turs .c-box img{
+    width: 100%;
+}
+#packdetails .nav-tabs .nav-link:hover{
+   border-color: #ffffff00 #e9ecef00 #dee2e600; 
+}
