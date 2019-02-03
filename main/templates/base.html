@@ -256,6 +256,25 @@
 	<script src="{% static 'theme/js/plugins/owl.carousel.min.js' %}"></script>
 	<!--Venobox JS-->
 	<script src="{% static 'theme/js/plugins/venobox.min.js' %}"></script>
+
+    <!-- Bootstrap Growl -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-growl/1.0.0/jquery.bootstrap-growl.min.js"></script>
+
+    {% for message in messages %}
+        <script>
+        $.bootstrapGrowl("{{ message }}", {
+          ele: 'body',
+          type: {% if "success" in message.tags %}"success"{% elif "error" in message.tags %}"danger"{% endif %},
+          offset: {from: 'top', amount: 120},
+          align: 'right',
+          width: 250,
+          delay: 400000,
+          allow_dismiss: true,
+          stackup_spacing: 10
+        });
+        </script>
+    {% endfor %}
+
 	<!--Slick Slider JS-->
 	<script src="{% static 'theme/js/plugins/slick.min.js' %}"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7eALQrRUekFNQX71IBNkxUXcz-ALS-MY&sensor=false"></script>
@@ -269,19 +288,5 @@
         {% block page_level_scripts %}
         {% endblock %}
 
-        {% for message in messages %}
-            <script>
-            $.bootstrapGrowl("{{ message }}", {
-              ele: 'body',
-              type: {% if "success" in message.tags %}"success"{% elif "error" in message.tags %}"danger"{% endif %},
-              offset: {from: 'top', amount: 120},
-              align: 'right',
-              width: 250,
-              delay: 400000,
-              allow_dismiss: true,
-              stackup_spacing: 10
-            });
-            </script>
-        {% endfor %}
     </body>
 </html>

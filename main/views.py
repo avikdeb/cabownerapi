@@ -26,6 +26,7 @@ class LoginView(FormView):
 
     def form_valid(self, form):
         if self.request.user.is_authenticated:
+            messages.add_message(self.request, 25, "You already logged in")
             return HttpResponseRedirect("/")
 
         username_email = form.cleaned_data.get("username_email", None)
@@ -55,10 +56,12 @@ class LoginView(FormView):
                 return super(LoginView, self).form_invalid(form)
 
             login(self.request, user_auth)
+            messages.add_message(self.request, 25, "You have been logged in successfully")
         return super(LoginView, self).form_valid(form)
     
     def form_invalid(self, form):
         print(form.errors)
+        messages.add_message(self.request, 25, "Form invalid, Please try again")
         return super(LoginView, self).form_invalid(form)
 
 
