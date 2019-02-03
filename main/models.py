@@ -26,10 +26,16 @@ class mstCar(models.Model):
     rentTypeFlag = models.BooleanField(blank=True, default=True)
     rentValue = models.BigIntegerField(null=True, blank=True)
 
+    def __str__(self):
+        return "CarType: " + str(self.carType) + " / ModelId: " + str(self.modelId)
+
 
 class carRoute(models.Model):
     route = models.BigIntegerField(null=True, blank=True)
     car = models.BigIntegerField(null=True, blank=True)
+
+    def __str__(self):
+        return str(self.route)
 
 
 class mstRoute(models.Model):
@@ -37,15 +43,24 @@ class mstRoute(models.Model):
     destination = models.BigIntegerField(null=True, blank=True)
     notes = models.TextField(null=True, blank=True)
 
+    def __str__(self):
+        return "Source: " + str(self.source) + " / Destination: " + str(self.destination)
 
-class model(models.Model):
+
+class carModel(models.Model):
     modelName = models.CharField(max_length=180, null=True, blank=False)
     modelId = models.BigIntegerField(null=True, blank=True)
     manufactureId = models.BigIntegerField(null=True, blank=True)
 
+    def __str__(self):
+        return "Model Name: " + str(self.modelName) + " / ModelId: " + str(self.modelId)
+
 
 class manufacturer(models.Model):
     manufacturerName = models.CharField(max_length=180, null=True, blank=False)
+
+    def __str__(self):
+        return str(self.manufacturerName)
 
 
 class mstRegistration(models.Model):
@@ -55,8 +70,27 @@ class mstRegistration(models.Model):
     registrationEndDate = models.DateTimeField(null=True, blank=True)
     registrationStatusId = models.BigIntegerField(null=True, blank=True)
 
+    def __str__(self):
+        return "UserId: " + str(self.registeredUserId) + " / CarId: " + str(self.registeredCarId)
 
 
+class manufacturerRegistration(models.Model):
+    license_number = models.CharField(max_length=256, null=True, blank=False)
+    manufacturing_date = models.DateTimeField(null=True, blank=False)
+    manufacturer_name = models.CharField(max_length=256, null=True, blank=False)
+    model = models.ForeignKey(carModel, null=True, blank=False)
+    fuel_type = models.CharField(max_length=56, null=True, blank=False)
+    vehicle_color = models.CharField(max_length=56, null=True, blank=False)
+    vehicle_type = models.ForeignKey(carType, null=True, blank=False)
+    km_run = models.CharField(max_length=256, null=True, blank=False)
+    rc = models.FileField(null=True, blank=True)
+    fitness = models.FileField(null=True, blank=True)
+    permit = models.FileField(null=True, blank=True)
+    insurance = models.FileField(null=True, blank=True)
+    pollution = models.FileField(null=True, blank=True)
+
+    def __str__(self):
+        return "License No: "+ str(self.license_number) + " / Manufacturer: " + str(self.manufacturer_name) + " / KM Run:" + str(self.km_run)
 
 
 

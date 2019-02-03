@@ -160,9 +160,27 @@ a {
 .margin-10{
     margin: 10px;
 }
-
+.margin-label{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 0px!important;
+}
 .bg-black {
     background: black;
+}
+.bg-light_grey{
+    background: lightgrey;
+}
+
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+.align-r {
+    text-align: right !important;
 }
 /* ====================================
 Common Css End

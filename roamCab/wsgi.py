@@ -1,5 +1,5 @@
 """
-WSGI config for cabChoice project.
+WSGI config for roamCab project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "cabChoice.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "roamCab.settings")
 
 application = get_wsgi_application()
