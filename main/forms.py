@@ -2,10 +2,22 @@ from django import forms
 from . import models
 
 
-class RegistrationForm(forms.ModelForm):
+class RegistrationCarForm(forms.ModelForm):
     class Meta:
         model = models.manufacturerRegistration
         fields = "__all__"
+
+
+class RegistrationOwnerForm(forms.ModelForm):
+    class Meta:
+        model = models.ownerRegistration
+        fields = "__all__"
+
+
+class CheckLicenseNumberForm(forms.ModelForm):
+    class Meta:
+        model = models.manufacturerRegistration
+        fields = ["license_number"]
 
 
 class LoginForm(forms.Form):

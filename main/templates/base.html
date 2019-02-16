@@ -91,7 +91,7 @@
 {#									</div>#}
 {#								</li>#}
 								<li class="nav-item">
-									<a class="nav-link" href="/register">Register</a>
+									<a class="nav-link" href="/checkLicenseNumber">Register</a>
 								</li>
 							</ul>
 						<a class="mamunur_rashid_top_book_btn" href="ticket-booking.html">Book Online</a>
@@ -279,6 +279,8 @@
 	<script src="{% static 'theme/js/plugins/slick.min.js' %}"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7eALQrRUekFNQX71IBNkxUXcz-ALS-MY&sensor=false"></script>
     <script src="{% static 'theme/js/plugins/gmap.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.0/js.cookie.min.js"></script>
+
 	<!--Main-->
 	<script src="{% static 'theme/js/custom.js' %}"></script>
 
@@ -286,6 +288,7 @@
 
 
         {% block page_level_scripts %}
+            <script src="{% static 'theme/js/checkLicenseNumber.js' %}"></script>
         {% endblock %}
 
     </body>

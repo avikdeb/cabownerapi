@@ -48,7 +48,7 @@
                                      <div class="row">
                                          <div class="col-md-12">
                                              <label class="align-r">License Number</label>
-                                             <input type="text" class="form-control" placeholder="Enter Car License Number" name="license_number" {% if form.errors %}value="{{ form.license_number.value }}"{% endif %} required>
+                                             <input type="text" class="form-control" placeholder="Enter Car License Number" name="license_number" value="{{ view.get_car.license_number }}" required>
                                              <span style="color: red; font-size: smaller">{{ form.license_number.errors }}</span>
                                          </div>
                                          <div class="col-md-12">
@@ -56,11 +56,7 @@
                                              <input type="date" class="form-control" placeholder="Manufacturing Date" name="manufacturing_date" {% if form.errors %}value="{{ form.manufacturing_date.value }}"{% endif %} required>
                                              <span style="color: red; font-size: smaller">{{ form.manufacturing_date.errors }}</span>
                                          </div>
-                                         <div class="col-md-12">
-                                             <label class="margin-label">Manufacturer</label>
-                                             <input type="text" class="form-control" placeholder="Enter Manufacturer Name" name="manufacturer_name" {% if form.errors %}value="{{ form.manufacturer_name.value }}"{% endif %} required>
-                                             <span style="color: red; font-size: smaller">{{ form.manufacturer_name.errors }}</span>
-                                         </div>
+
                                          <div class="col-md-12">
                                              <label class="margin-label">Model</label>
                                              <select class="form-control" name="model" required style="height: 60px;">
@@ -71,27 +67,38 @@
                                              </select>
                                              <span style="color: red; font-size: smaller">{{ form.model.errors }}</span>
                                          </div>
-                                         <div class="col-12">
-                                             <label class="margin-label">Fuel Type</label>
-                                             <select class="form-control" name="fuel_type" required style="height: 60px;">
-                                                 <option {% if not form.errors or not form.fuel_type.value %}selected{% endif %} disabled>Select a fuel type</option>
-                                                 <option value="petrol" {% if form.errors and form.fuel_type.value == "petrol" %}selected{% endif %}>Petrol</option>
-                                                 <option value="diesel" {% if form.errors and form.fuel_type.value == "diesel" %}selected{% endif %}>Diesel</option>
-                                                 <option value="cng" {% if form.errors and form.fuel_type.value == "cng" %}selected{% endif %}>Petrol + CNG</option>
-                                                 <option value="hybrid" {% if form.errors and form.fuel_type.value == "hybrid" %}selected{% endif %}>Hybrid</option>
+                                         <div class="col-md-12">
+                                             <label class="margin-label">Rate List</label>
+                                             <select class="form-control" name="rateList" required style="height: 60px;">
+                                                 <option {% if not form.errors or not form.rateList.value %}selected{% endif %} disabled>Select a rate list</option>
+                                                 {% for item in view.get_rateList %}
+                                                    <option value="{{ item.id }}" {% if form.errors and form.rateList.value == item.id %}selected{% endif %}>{{ item.rate }}</option>
+                                                 {% endfor %}
                                              </select>
-                                             <span style="color: red; font-size: smaller">{{ form.fuel_type.errors }}</span>
+                                             <span style="color: red; font-size: smaller">{{ form.rateList.errors }}</span>
                                          </div>
-                                         <div class="col-12">
+                                         <div class="col-md-12">
+                                             <label class="margin-label">Fuel Type</label>
+                                             <select class="form-control" name="fuelType" required style="height: 60px;">
+                                                 <option {% if not form.errors or not form.fuelType.value %}selected{% endif %} disabled>Select a fuel type</option>
+                                                 {% for item in view.get_fuelType %}
+                                                    <option value="{{ item.id }}" {% if form.errors and form.fuelType.value == item.id %}selected{% endif %}>{{ item.type }}</option>
+                                                 {% endfor %}
+                                             </select>
+                                             <span style="color: red; font-size: smaller">{{ form.fuelType.errors }}</span>
+                                         </div>
+
+                                         <div class="col-md-12">
                                              <label class="margin-label">Vehicle Colour</label>
                                              <select class="form-control" name="vehicle_color" required style="height: 60px;">
-                                                 <option {% if not form.errors or not form.vehicle_color.value %}selected{% endif %} disabled>Select a color</option>
-                                                 <option value="yellow" {% if form.errors and form.vehicle_color.value == "yellow" %}selected{% endif %}>Yellow</option>
-                                                 <option value="black" {% if form.errors and form.vehicle_color.value == "black" %}selected{% endif %}>Black</option>
-                                                 <option value="white" {% if form.errors and form.vehicle_color.value == "white" %}selected{% endif %}>White</option>
+                                                 <option {% if not form.errors or not form.vehicle_color.value %}selected{% endif %} disabled>Select a vehicle colour</option>
+                                                 {% for item in view.get_vehicleColour %}
+                                                    <option value="{{ item.id }}" {% if form.errors and form.vehicle_color.value == item.id %}selected{% endif %}>{{ item.colour }}</option>
+                                                 {% endfor %}
                                              </select>
                                              <span style="color: red; font-size: smaller">{{ form.vehicle_color.errors }}</span>
                                          </div>
+
                                          <div class="col-12">
                                              <label class="margin-label">Vehicle Type</label>
                                              <select class="form-control" name="vehicle_type" required style="height: 60px;">
