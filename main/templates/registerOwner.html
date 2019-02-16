@@ -1,0 +1,201 @@
+{% extends 'base.html' %}
+{% load static from staticfiles %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+	<!--Start Body Wrap-->
+	<div id="body-wrap">
+
+		<!-- =========== nav end =========== -->
+
+		<section id="breadcrumb">
+			<div class="overly"></div>
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-8 col-md-10 text-center">
+						<div class="breadcrumbinfo">
+							<article>
+								<h2>Contacts Us</h2>
+								<a href="#">Home</a> <span>/</span>
+								<a class="active" href="#">Contacts Us</a>
+							</article>
+						</div>
+					</div>
+				</div>
+		</div>
+	</section>
+	<!-- =========== banner end =========== -->
+
+
+<!--================================
+        contact us  part start
+    =====================================-->
+		<section id="contact-main" class="bg-light_grey">
+			 <div class="contact-form-area-padding">
+				 <div class="container">
+					 <div class="row contact-form-area">
+						 <div class="col-lg-12 contact-form" >
+                             <div id="step-2" class="show">
+                                 <div class="row">
+                                     <div class="text-center">
+                                         <div class="contact-block-form">
+                                             <h4>Keep in touch</h4>
+                                             <p>There are many variations of passages of Lorem Ipsum available but the majority a have suffered alteration in some form by injected humour or randomised look even slightly believable. </p>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <form id="c-form" method="post" enctype="multipart/form-data">
+                                     {% csrf_token %}
+{#                                     {{ form|crispy }}#}
+
+                                     <div class="row">
+                                         <div class="col-md-12">
+                                             <label class="align-r">Driver's Name</label>
+                                             <input type="text" class="form-control" placeholder="Enter Driver's Name" name="name" {% if form.errors %}value="{{ form.name.value }}"{% endif %} required>
+                                             <span style="color: red; font-size: smaller">{{ form.name.errors }}</span>
+                                         </div>
+                                         <div class="col-md-12">
+                                             <label class="align-r">Driver's Mobile Number</label>
+                                             <input type="text" class="form-control" placeholder="Enter Driver's Mobile Number" name="mobileNumber" {% if form.errors %}value="{{ form.mobileNumber.value }}"{% endif %} required>
+                                             <span style="color: red; font-size: smaller">{{ form.mobileNumber.errors }}</span>
+                                         </div>
+                                         <div class="col-md-12">
+                                             <label class="align-r">Driver's License Number</label>
+                                             <input type="text" class="form-control" placeholder="Enter Driver's License Number" name="licenseNumber" {% if form.errors %}value="{{ form.licenseNumber.value }}"{% endif %} required>
+                                             <span style="color: red; font-size: smaller">{{ form.licenseNumber.errors }}</span>
+                                         </div>
+                                         <div class="col-md-12">
+                                             <label class="margin-label">Date of Birth</label>
+                                             <input type="date" class="form-control" placeholder="Date of Birth" name="dateOfBirth" {% if form.errors %}value="{{ form.dateOfBirth.value }}"{% endif %} required>
+                                             <span style="color: red; font-size: smaller">{{ form.dateOfBirth.errors }}</span>
+                                         </div>
+                                         <div class="col-12">
+                                             <label class="margin-label">Aadhar Card Front</label>
+                                             <input type="file" class="form-control" placeholder="Select the file to upload" style="line-height: normal" name="aadharCardFront">
+                                         </div>
+                                         <div class="col-12">
+                                             <label class="margin-label">Aadhar Card Back</label>
+                                             <input type="file" class="form-control" placeholder="Select the file to upload" style="line-height: normal" name="aadharCardBack">
+                                         </div>
+                                         <div class="col-12">
+                                             <label class="margin-label">License Front</label>
+                                             <input type="file" class="form-control" placeholder="Select the file to upload" style="line-height: normal" name="licenseFront">
+                                         </div>
+                                         <div class="col-12">
+                                             <label class="margin-label">License Back</label>
+                                             <input type="file" class="form-control" placeholder="Select the file to upload" style="line-height: normal" name="licenseBack">
+                                         </div>
+                                         <div class="col-12">
+                                             <label class="margin-label">Driver's Photo</label>
+                                             <input type="file" class="form-control" placeholder="Select the file to upload" style="line-height: normal" name="photo">
+                                         </div>
+                                        <div class="col-12">
+                                             <label class="margin-label">Driver's Address Proof</label>
+                                             <input type="file" class="form-control" placeholder="Select the file to upload" style="line-height: normal" name="addressProof">
+                                         </div>
+{##}
+
+{##}
+{#                                         <div class="col-md-12">#}
+{#                                             <label class="margin-label">Model</label>#}
+{#                                             <select class="form-control" name="model" required style="height: 60px;">#}
+{#                                                 <option {% if not form.errors or not form.model.value %}selected{% endif %} disabled>Select a model</option>#}
+{#                                                 {% for item in view.get_models %}#}
+{#                                                    <option value="{{ item.id }}" {% if form.errors and form.model.value == item.id %}selected{% endif %}>{{ item.modelName }}</option>#}
+{#                                                 {% endfor %}#}
+{#                                             </select>#}
+{#                                             <span style="color: red; font-size: smaller">{{ form.model.errors }}</span>#}
+{#                                         </div>#}
+{#                                         <div class="col-md-12">#}
+{#                                             <label class="margin-label">Rate List</label>#}
+{#                                             <select class="form-control" name="rateList" required style="height: 60px;">#}
+{#                                                 <option {% if not form.errors or not form.rateList.value %}selected{% endif %} disabled>Select a rate list</option>#}
+{#                                                 {% for item in view.get_rateList %}#}
+{#                                                    <option value="{{ item.id }}" {% if form.errors and form.rateList.value == item.id %}selected{% endif %}>{{ item.rate }}</option>#}
+{#                                                 {% endfor %}#}
+{#                                             </select>#}
+{#                                             <span style="color: red; font-size: smaller">{{ form.rateList.errors }}</span>#}
+{#                                         </div>#}
+{#                                         <div class="col-12">#}
+{#                                             <label class="margin-label">Fuel Type</label>#}
+{#                                             <select class="form-control" name="fuel_type" required style="height: 60px;">#}
+{#                                                 <option {% if not form.errors or not form.fuel_type.value %}selected{% endif %} disabled>Select a fuel type</option>#}
+{#                                                 <option value="petrol" {% if form.errors and form.fuel_type.value == "petrol" %}selected{% endif %}>Petrol</option>#}
+{#                                                 <option value="diesel" {% if form.errors and form.fuel_type.value == "diesel" %}selected{% endif %}>Diesel</option>#}
+{#                                                 <option value="cng" {% if form.errors and form.fuel_type.value == "cng" %}selected{% endif %}>Petrol + CNG</option>#}
+{#                                                 <option value="hybrid" {% if form.errors and form.fuel_type.value == "hybrid" %}selected{% endif %}>Hybrid</option>#}
+{#                                             </select>#}
+{#                                             <span style="color: red; font-size: smaller">{{ form.fuel_type.errors }}</span>#}
+{#                                         </div>#}
+{#                                         <div class="col-12">#}
+{#                                             <label class="margin-label">Vehicle Colour</label>#}
+{#                                             <select class="form-control" name="vehicle_color" required style="height: 60px;">#}
+{#                                                 <option {% if not form.errors or not form.vehicle_color.value %}selected{% endif %} disabled>Select a color</option>#}
+{#                                                 <option value="yellow" {% if form.errors and form.vehicle_color.value == "yellow" %}selected{% endif %}>Yellow</option>#}
+{#                                                 <option value="black" {% if form.errors and form.vehicle_color.value == "black" %}selected{% endif %}>Black</option>#}
+{#                                                 <option value="white" {% if form.errors and form.vehicle_color.value == "white" %}selected{% endif %}>White</option>#}
+{#                                             </select>#}
+{#                                             <span style="color: red; font-size: smaller">{{ form.vehicle_color.errors }}</span>#}
+{#                                         </div>#}
+{#                                         <div class="col-12">#}
+{#                                             <label class="margin-label">Vehicle Type</label>#}
+{#                                             <select class="form-control" name="vehicle_type" required style="height: 60px;">#}
+{#                                                 <option {% if not form.errors or not form.vehicle_type.value %}selected{% endif %} disabled>Select a vehicle type</option>#}
+{#                                                 {% for item in view.get_vehicle_types %}#}
+{#                                                    <option value="{{ item.id }}" {% if form.errors and form.vehicle_type.value == item.id %}selected{% endif %}>{{ item.carTypeName }}</option>#}
+{#                                                 {% endfor %}#}
+{#                                             </select>#}
+{#                                             <span style="color: red; font-size: smaller">{{ form.vehicle_type.errors }}</span>#}
+{#                                         </div>#}
+{#                                         <div class="col-12">#}
+{#                                             <label class="margin-label">Kilometers run</label>#}
+{#                                             <input type="number" class="form-control" placeholder="Enter kilometers run" {% if form.errors %}value="{{ form.km_run.value }}"{% endif %} name="km_run" required>#}
+{#                                             <span style="color: red; font-size: smaller">{{ form.km_run.errors }}</span>#}
+{#                                         </div>#}
+{#                                         <div class="col-12">#}
+{#                                             <label class="margin-label">RC</label>#}
+{#                                             <input type="file" class="form-control" placeholder="Select the file to upload" style="line-height: normal" name="rc">#}
+{#                                         </div>#}
+{#                                         <div class="col-12">#}
+{#                                             <label class="margin-label">Fitness</label>#}
+{#                                             <input type="file" class="form-control" placeholder="Select the file to upload" style="line-height: normal" name="fitness">#}
+{#                                         </div>#}
+{#                                         <div class="col-12">#}
+{#                                             <label class="margin-label">Permit</label>#}
+{#                                             <input type="file" class="form-control" placeholder="Select the file to upload" style="line-height: normal" name="permit">#}
+{#                                         </div>#}
+{#                                         <div class="col-12">#}
+{#                                             <label class="margin-label">Insurance</label>#}
+{#                                             <input type="file" class="form-control" placeholder="Select the file to upload" style="line-height: normal" name="insurance">#}
+{#                                         </div>#}
+{#                                        <div class="col-12">#}
+{#                                             <label class="margin-label">Pollution</label>#}
+{#                                             <input type="file" class="form-control" placeholder="Select the file to upload" style="line-height: normal" name="pollution">#}
+{#                                         </div>#}
+                                         <div class="col-12">
+                                             <div>
+                                                 <button type="submit" class="btn btn-contact">submit</button>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </form>
+                             </div>
+						 </div>
+					 </div>
+				 </div>
+			 </div>
+		 </section>
+		 <!--================================
+				 contact us part end
+		=====================================-->
+
+
+
+	<!--Start ClickToTop-->
+	<div class="totop">
+		<a href="#top"><i class="fa fa-arrow-up"></i></a>
+	</div>
+	<!--End ClickToTop-->
+	</div>
+
+{% endblock %}

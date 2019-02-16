@@ -1,0 +1,126 @@
+{% extends 'base.html' %}
+{% load static from staticfiles %}
+{% block content %}
+
+	<!--Start Body Wrap-->
+	<div id="body-wrap">
+
+		<!-- =========== nav end =========== -->
+
+		<section id="breadcrumb">
+			<div class="overly"></div>
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-8 col-md-10 text-center">
+						<div class="breadcrumbinfo">
+							<article>
+								<h2>Contacts Us</h2>
+								<a href="#">Home</a> <span>/</span>
+								<a class="active" href="#">Contacts Us</a>
+							</article>
+						</div>
+					</div>
+				</div>
+		</div>
+	</section>
+	<!-- =========== banner end =========== -->
+
+
+<!--================================
+        contact us  part start
+    =====================================-->
+		<section id="contact-main" class="bg-light_grey">
+			 <div class="contact-form-area-padding">
+				 <div class="container">
+					 <div class="row contact-form-area">
+						 <div class="col-lg-12 contact-form" >
+                             <div id="step-2" class="show">
+                                 <div class="row">
+                                     <div class="text-center">
+                                         <div class="contact-block-form">
+                                             <h4>Keep in touch</h4>
+                                             <p>There are many variations of passages of Lorem Ipsum available but the majority a have suffered alteration in some form by injected humour or randomised look even slightly believable. </p>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div id="license-form" enctype="multipart/form-data">
+                                     {% csrf_token %}
+                                     <div class="row">
+                                         <div class="col-md-12">
+                                             <label class="align-r">License Number</label>
+                                             <input id="license_number" type="text" class="form-control" placeholder="Enter Car License Number" name="license_number" required>
+                                             <span class="hide" id="license_number_error" style="color: red; font-size: smaller">Please Enter Valid License Number</span>
+                                         </div>
+                                        <div class="col-12">
+                                             <div>
+                                                 <button type="submit" onclick="checkLicenseNumber()" class="btn btn-contact">submit</button>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+						 </div>
+					 </div>
+				 </div>
+			 </div>
+
+            <div id="confirmationModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Confirmation</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Do you want to proceed with car number?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button onclick="save_CarNumber()" type="button" class="btn btn-primary" data-dismiss="modal">Yes</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		 </section>
+		 <!--================================
+				 contact us part end
+		=====================================-->
+
+
+
+	<!--Start ClickToTop-->
+	<div class="totop">
+		<a href="#top"><i class="fa fa-arrow-up"></i></a>
+	</div>
+	<!--End ClickToTop-->
+	</div>
+
+    {% block page_level_scripts %}
+        <script src="{% static 'theme/js/checkLicenseNumber.js' %}"></script>
+    {% endblock %}
+
+
+    <script>
+
+        function save_CarNumber() {
+            var data = {
+                "license_number": $("#license_number").val(),
+                'csrfmiddlewaretoken': '{{ csrf_token }}'
+            };
+
+            var settings = {
+                "method": "POST",
+                "url": "/checkLicenseNumber/",
+                "data": data,
+                "success": function (data) {
+                    window.location.href = "/registerCar/" + data["car_id"];
+                }
+            };
+            $.ajax(settings);
+        }
+    </script>
+
+{% endblock %}
