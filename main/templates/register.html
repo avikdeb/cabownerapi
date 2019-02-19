@@ -67,16 +67,16 @@
                                              </select>
                                              <span style="color: red; font-size: smaller">{{ form.model.errors }}</span>
                                          </div>
-                                         <div class="col-md-12">
-                                             <label class="margin-label">Rate List</label>
-                                             <select class="form-control" name="rateList" required style="height: 60px;">
-                                                 <option {% if not form.errors or not form.rateList.value %}selected{% endif %} disabled>Select a rate list</option>
-                                                 {% for item in view.get_rateList %}
-                                                    <option value="{{ item.id }}" {% if form.errors and form.rateList.value == item.id %}selected{% endif %}>{{ item.rate }}</option>
-                                                 {% endfor %}
-                                             </select>
-                                             <span style="color: red; font-size: smaller">{{ form.rateList.errors }}</span>
-                                         </div>
+{#                                         <div class="col-md-12">#}
+{#                                             <label class="margin-label">Rate List</label>#}
+{#                                             <select class="form-control" name="rateList" required style="height: 60px;">#}
+{#                                                 <option {% if not form.errors or not form.rateList.value %}selected{% endif %} disabled>Select a rate list</option>#}
+{#                                                 {% for item in view.get_rateList %}#}
+{#                                                    <option value="{{ item.id }}" {% if form.errors and form.rateList.value == item.id %}selected{% endif %}>{{ item.rate }}</option>#}
+{#                                                 {% endfor %}#}
+{#                                             </select>#}
+{#                                             <span style="color: red; font-size: smaller">{{ form.rateList.errors }}</span>#}
+{#                                         </div>#}
                                          <div class="col-md-12">
                                              <label class="margin-label">Fuel Type</label>
                                              <select class="form-control" name="fuelType" required style="height: 60px;">

@@ -80,7 +80,7 @@ class manufacturerRegistration(models.Model):
     permit = models.FileField(null=True, blank=True)
     insurance = models.FileField(null=True, blank=True)
     pollution = models.FileField(null=True, blank=True)
-    rateList = models.ForeignKey("rateList", null=True, blank=False)
+    rateList = models.ForeignKey("rateList", null=True, blank=True)
 
     def __str__(self):
         return "License No: " + str(self.license_number) + " / Manufacturer: " + str(self.manufacturer) + "/ KM " \
