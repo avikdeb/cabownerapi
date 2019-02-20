@@ -19,7 +19,7 @@ function checkLicenseNumber() {
             "success": function (data) {
                 if (data["registered"] === true) {
                     $("#license_number_error").removeClass('hide');
-                    $("#license_number_error").text("Please Enter Valid License Number, as it is already registered with us.");
+                    $("#license_number_error").text("Please Enter Valid Car Number, as it is already registered with us.");
                 }
                 else {
                     $('#confirmationModal').modal();

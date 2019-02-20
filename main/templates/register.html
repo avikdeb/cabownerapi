@@ -47,8 +47,8 @@
                                      {% csrf_token %}
                                      <div class="row">
                                          <div class="col-md-12">
-                                             <label class="align-r">License Number</label>
-                                             <input type="text" class="form-control" placeholder="Enter Car License Number" name="license_number" value="{{ view.get_car.license_number }}" required>
+                                             <label class="align-r">Car Number</label>
+                                             <input type="text" class="form-control" placeholder="Enter Car Number" name="license_number" value="{{ view.get_car.license_number }}" required>
                                              <span style="color: red; font-size: smaller">{{ form.license_number.errors }}</span>
                                          </div>
                                          <div class="col-md-12">
