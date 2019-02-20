@@ -161,9 +161,6 @@ class RegisterCarView(FormView):
     def get_rateList(self):
         return models.rateList.objects.all()
 
-    def get_vehicle_types(self):
-        return models.carType.objects.all()
-
 
 class HomeView(TemplateView):
     template_name = "home.html"
