@@ -41,11 +41,10 @@ class mstRoute(models.Model):
 
 class carModel(models.Model):
     modelName = models.CharField(max_length=180, null=True, blank=False)
-    modelId = models.BigIntegerField(null=True, blank=True)
-    manufactureId = models.BigIntegerField(null=True, blank=True)
+    manufacturer = models.ForeignKey("manufacturer", null=True, blank=True)
 
     def __str__(self):
-        return "Model Name: " + str(self.modelName) + " / ModelId: " + str(self.modelId)
+        return "Model Name: " + str(self.modelName) + " / ModelId: " + str(self.id)
 
 
 class manufacturer(models.Model):
