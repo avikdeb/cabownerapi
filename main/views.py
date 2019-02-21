@@ -121,7 +121,6 @@ class RegisterCarView(FormView):
                 manufacturer__registration.fuel_type = form.cleaned_data.get("fuel_type", None)
                 manufacturer__registration.rateList = form.cleaned_data.get("rateList", None)
                 manufacturer__registration.vehicle_color = form.cleaned_data.get("vehicle_color", None)
-                manufacturer__registration.vehicle_type = form.cleaned_data.get("vehicle_type", None)
                 manufacturer__registration.km_run = form.cleaned_data.get("km_run", None)
                 manufacturer__registration.model = form.cleaned_data.get("model", None)
                 manufacturer__registration.rc = form.cleaned_data.get("rc", None)

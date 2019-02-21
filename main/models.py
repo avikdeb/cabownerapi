@@ -68,11 +68,10 @@ class mstRegistration(models.Model):
 class manufacturerRegistration(models.Model):
     license_number = models.CharField(max_length=256, null=True, blank=False)
     manufacturing_date = models.DateTimeField(null=True, blank=False)
-    manufacturer = models.ForeignKey("manufacturer", null=True, blank=True)
+    manufacturer = models.ForeignKey("manufacturer", null=True, blank=False)
     model = models.ForeignKey(carModel, null=True, blank=False)
-    fuel_type = models.ForeignKey("fuelType", null=True, blank=True)
+    fuel_type = models.ForeignKey("fuelType", null=True, blank=False)
     vehicle_color = models.ForeignKey("vehicleColour", null=True, blank=False)
-    vehicle_type = models.ForeignKey(carType, null=True, blank=False)
     km_run = models.CharField(max_length=256, null=True, blank=False)
     rc = models.FileField(null=True, blank=True)
     fitness = models.FileField(null=True, blank=True)
