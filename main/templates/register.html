@@ -2,6 +2,16 @@
 {% load static from staticfiles %}
 {% block content %}
 
+    <style>
+        .form-control-custom{
+            width: 100%;
+            background-color: #ffffff;
+            border: none;
+            text-indent: 10px;
+            color: #495057;
+        }
+    </style>
+
 	<!--Start Body Wrap-->
 	<div id="body-wrap">
 
@@ -58,7 +68,7 @@
                                          </div>
                                          <div class="col-12">
                                              <label class="margin-label">Manufacturer</label>
-                                             <select class="form-control" name="vehicle_type" required style="height: 60px;">
+                                             <select class="form-control-custom" name="vehicle_type" required style="height: 60px;">
                                                  <option {% if not form.errors or not form.manufacturer.value %}selected{% endif %} disabled>Select a Manufacturer</option>
                                                  {% for item in view.get_manufacturers %}
                                                     <option value="{{ item.id }}" {% if form.errors and form.manufacturer.value == item.id %}selected{% endif %}>{{ item.manufacturerName }}</option>
@@ -69,7 +79,7 @@
 
                                          <div class="col-md-12">
                                              <label class="margin-label">Model</label>
-                                             <select class="form-control" name="model" required style="height: 60px;">
+                                             <select class="form-control-custom" name="model" required style="height: 60px;">
                                                  <option {% if not form.errors or not form.model.value %}selected{% endif %} disabled>Select a model</option>
                                                  {% for item in view.get_models %}
                                                     <option value="{{ item.id }}" {% if form.errors and form.model.value == item.id %}selected{% endif %}>{{ item.modelName }}</option>
@@ -89,7 +99,7 @@
 {#                                         </div>#}
                                          <div class="col-md-12">
                                              <label class="margin-label">Fuel Type</label>
-                                             <select class="form-control" name="fuelType" required style="height: 60px;">
+                                             <select class="form-control-custom" name="fuelType" required style="height: 60px;">
                                                  <option {% if not form.errors or not form.fuelType.value %}selected{% endif %} disabled>Select a fuel type</option>
                                                  {% for item in view.get_fuelType %}
                                                     <option value="{{ item.id }}" {% if form.errors and form.fuelType.value == item.id %}selected{% endif %}>{{ item.type }}</option>
@@ -100,7 +110,7 @@
 
                                          <div class="col-md-12">
                                              <label class="margin-label">Vehicle Colour</label>
-                                             <select class="form-control" name="vehicle_color" required style="height: 60px;">
+                                             <select class="form-control-custom" name="vehicle_color" required style="height: 60px;">
                                                  <option {% if not form.errors or not form.vehicle_color.value %}selected{% endif %} disabled>Select a vehicle colour</option>
                                                  {% for item in view.get_vehicleColour %}
                                                     <option value="{{ item.id }}" {% if form.errors and form.vehicle_color.value == item.id %}selected{% endif %}>{{ item.colour }}</option>
